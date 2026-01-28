@@ -30,6 +30,8 @@ jobs:
         run: |
           npm ci
           npm run build
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
 
       # GitHub Pages: bulunamayan path'lerde 404.html serve edilir.
       - name: 404.html for SPA routing
