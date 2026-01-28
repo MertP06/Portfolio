@@ -5,7 +5,7 @@ on:
     branches: [main, master]
 
 permissions:
-  contents: read
+  contents: write   # peaceiris: gh-pages branch'ine push için gerekli
   pages: write
   id-token: write
 
