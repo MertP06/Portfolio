@@ -4,8 +4,9 @@ on:
   push:
     branches: [main, master]
 
+# "GitHub Actions" source kullanildiginda gerekli; "Deploy from a branch" degil.
 permissions:
-  contents: write   # peaceiris: gh-pages branch'ine push için gerekli
+  contents: read
   pages: write
   id-token: write
 
@@ -33,33 +34,32 @@ jobs:
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
 
-      # GitHub Pages: bulunamayan path'lerde 404.html serve edilir.
       - name: 404.html for SPA routing
         run: cp dist/index.html dist/404.html
 
-      # Build dogru: bundle path’i kontrol et (/src/main.tsx olmamali)
       - name: Verify build output
         run: |
           if grep -q 'src="/src/main.tsx"' dist/index.html; then
-            echo "HATA: index.html hala /src/main.tsx iceriyor - build dogru degil"
+            echo "HATA: index.html hala /src/main.tsx iceriyor"
             exit 1
           fi
-          echo "OK: Build ciktisi dogru (bundle path mevcut)"
+          echo "OK: Build ciktisi dogru"
 
       - name: Add .nojekyll
         run: touch dist/.nojekyll
 
-      - name: Debug deploy icerigi
-        run: |
-          echo "--- dist/ ---"
-          ls -la dist/
-          echo "--- index.html script/link ---"
-          grep -E 'src=|href=' dist/index.html || true
-
-      - name: Deploy to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: gh-pages
-          force_orphan: true
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
