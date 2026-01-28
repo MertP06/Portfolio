@@ -48,6 +48,13 @@ jobs:
       - name: Add .nojekyll
         run: touch dist/.nojekyll
 
+      # Dogrulama: /Portfolio/deploy-version.txt ile build’in canli oldugunu kontrol edebilirsin
+      - name: Deploy version marker
+        run: echo "deploy-$(date -u +%Y%m%d-%H%M%S)-${{ github.sha }}" > dist/deploy-version.txt
+
+      - name: Log index script (kontrol icin)
+        run: grep -o 'src="[^"]*"' dist/index.html | head -3
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
