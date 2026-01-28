@@ -46,9 +46,20 @@ jobs:
           fi
           echo "OK: Build ciktisi dogru (bundle path mevcut)"
 
+      - name: Add .nojekyll
+        run: touch dist/.nojekyll
+
+      - name: Debug deploy icerigi
+        run: |
+          echo "--- dist/ ---"
+          ls -la dist/
+          echo "--- index.html script/link ---"
+          grep -E 'src=|href=' dist/index.html || true
+
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: gh-pages
+          force_orphan: true

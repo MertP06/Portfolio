@@ -5,7 +5,7 @@ export const profile = {
     'Bilgisayar Mühendisliği Öğrencisi',
   ],
   location: 'Ankara, Türkiye',
-  photo: '/profile.jpeg',
+  photo: import.meta.env.BASE_URL + 'profile.jpeg',
   photoAlt: 'Mert Polat',
   summary:
     'KTÜN Bilgisayar Mühendisliği son sınıf öğrencisi. Okul projeleri ve staj deneyimim var.',
