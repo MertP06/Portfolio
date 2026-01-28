@@ -37,6 +37,15 @@ jobs:
       - name: 404.html for SPA routing
         run: cp dist/index.html dist/404.html
 
+      # Build dogru: bundle path’i kontrol et (/src/main.tsx olmamali)
+      - name: Verify build output
+        run: |
+          if grep -q 'src="/src/main.tsx"' dist/index.html; then
+            echo "HATA: index.html hala /src/main.tsx iceriyor - build dogru degil"
+            exit 1
+          fi
+          echo "OK: Build ciktisi dogru (bundle path mevcut)"
+
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
