@@ -85,8 +85,12 @@ export default function Home() {
           {/* Right - Photo */}
           <Reveal delay={0.15} className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="relative w-80 h-96 sm:w-96 sm:h-[480px] rounded-3xl overflow-hidden border border-white/10 bg-black flex items-center justify-center">
-                <span className="text-white text-7xl sm:text-8xl font-bold tracking-tight">MP</span>
+              <div className="relative w-80 h-96 sm:w-96 sm:h-[480px] rounded-3xl overflow-hidden border border-white/10">
+                <img
+                  src={profile.photo}
+                  alt={profile.photoAlt}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Stats overlay */}

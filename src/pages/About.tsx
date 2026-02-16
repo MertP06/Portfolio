@@ -12,8 +12,8 @@ export default function About() {
       <Reveal className="mt-12">
         <div className="flex flex-col md:flex-row gap-10 items-start">
           <div className="w-full md:w-72 flex-shrink-0">
-            <div className="rounded-2xl overflow-hidden border border-white/10 bg-black aspect-square flex items-center justify-center">
-              <span className="text-white text-6xl font-bold tracking-tight">MP</span>
+            <div className="rounded-2xl overflow-hidden border border-white/10">
+              <img src={profile.photo} alt={profile.photoAlt} className="w-full aspect-square object-cover" />
             </div>
           </div>
           <div className="flex-1">
