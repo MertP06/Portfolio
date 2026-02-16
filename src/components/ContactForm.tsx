@@ -20,9 +20,9 @@ export default function ContactForm() {
     await new Promise((resolve) => setTimeout(resolve, 1500))
 
     // For now, open mailto with the form data
-    const subject = encodeURIComponent(`Portfolio İletişim - ${formData.name}`)
+    const subject = encodeURIComponent(`Portfolio Contact - ${formData.name}`)
     const body = encodeURIComponent(
-      `Gönderen: ${formData.name}\nE-posta: ${formData.email}\n\nMesaj:\n${formData.message}`
+      `From: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     )
     window.location.href = `mailto:mert06polat@gmail.com?subject=${subject}&body=${body}`
 
@@ -41,7 +41,7 @@ export default function ContactForm() {
       <div className="grid gap-5 sm:grid-cols-2 mb-5">
         <div>
           <label htmlFor="name" className="mb-2 block text-sm text-neutral-400">
-            İsim
+            Name
           </label>
           <input
             type="text"
@@ -50,14 +50,14 @@ export default function ContactForm() {
             required
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            placeholder="Adınız Soyadınız"
+            placeholder="Your Full Name"
             className={inputClasses}
             disabled={formState === 'submitting'}
           />
         </div>
         <div>
           <label htmlFor="email" className="mb-2 block text-sm text-neutral-400">
-            E-posta
+            Email
           </label>
           <input
             type="email"
@@ -66,7 +66,7 @@ export default function ContactForm() {
             required
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            placeholder="ornek@email.com"
+            placeholder="example@email.com"
             className={inputClasses}
             disabled={formState === 'submitting'}
           />
@@ -74,7 +74,7 @@ export default function ContactForm() {
       </div>
       <div className="flex-1 flex flex-col mb-5">
         <label htmlFor="message" className="mb-2 block text-sm text-neutral-400">
-          Mesaj
+          Message
         </label>
         <textarea
           id="message"
@@ -82,7 +82,7 @@ export default function ContactForm() {
           required
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          placeholder="Mesajınızı buraya yazın..."
+          placeholder="Write your message here..."
           className={`${inputClasses} resize-none flex-1 min-h-[150px]`}
           disabled={formState === 'submitting'}
         />
@@ -108,7 +108,7 @@ export default function ContactForm() {
               exit={{ opacity: 0, y: -10 }}
               className="flex items-center gap-2"
             >
-              Gönder
+              Send
               <FiSend size={16} />
             </motion.span>
           )}
@@ -125,7 +125,7 @@ export default function ContactForm() {
                 transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
                 className="inline-block h-4 w-4 border-2 border-neutral-950 border-t-transparent rounded-full"
               />
-              Gönderiliyor...
+              Sending...
             </motion.span>
           )}
           {formState === 'success' && (
@@ -137,7 +137,7 @@ export default function ContactForm() {
               className="flex items-center gap-2"
             >
               <FiCheck size={16} />
-              Gönderildi!
+              Sent!
             </motion.span>
           )}
           {formState === 'error' && (
@@ -149,7 +149,7 @@ export default function ContactForm() {
               className="flex items-center gap-2"
             >
               <FiAlertCircle size={16} />
-              Bir hata oluştu
+              An error occurred
             </motion.span>
           )}
         </AnimatePresence>

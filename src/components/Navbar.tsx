@@ -4,12 +4,12 @@ import { FiArrowUpRight, FiMenu, FiX } from 'react-icons/fi'
 import { profile } from '../data/profile'
 
 const navItems = [
-  { to: '/', label: 'Anasayfa', end: true },
-  { to: '/about', label: 'Hakkımda' },
-  { to: '/skills', label: 'Yetenekler' },
-  { to: '/projects', label: 'Projeler' },
-  { to: '/experience', label: 'Deneyim' },
-  { to: '/contact', label: 'İletişim' },
+  { to: '/', label: 'Home', end: true },
+  { to: '/about', label: 'About' },
+  { to: '/skills', label: 'Skills' },
+  { to: '/projects', label: 'Projects' },
+  { to: '/experience', label: 'Experience' },
+  { to: '/contact', label: 'Contact' },
 ]
 
 export default function Navbar() {
@@ -76,7 +76,7 @@ export default function Navbar() {
             className="hidden sm:inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-4 py-2 text-sm font-medium text-white hover:bg-white/15 transition-colors"
             href={profile.contact.email ? `mailto:${profile.contact.email}` : '#'}
           >
-            İletişime geç
+            Get in Touch
             <FiArrowUpRight />
           </a>
 
@@ -84,7 +84,7 @@ export default function Navbar() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="relative z-50 flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-neutral-100 md:hidden hover:border-white/20 transition-colors"
-            aria-label={isOpen ? 'Menüyü kapat' : 'Menüyü aç'}
+            aria-label={isOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={isOpen}
           >
             {isOpen ? <FiX size={20} /> : <FiMenu size={20} />}
@@ -114,7 +114,7 @@ export default function Navbar() {
               className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-base font-semibold text-neutral-900"
               href={profile.contact.email ? `mailto:${profile.contact.email}` : '#'}
             >
-              İletişime geç
+              Get in Touch
               <FiArrowUpRight />
             </a>
           </nav>

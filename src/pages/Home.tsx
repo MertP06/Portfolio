@@ -21,7 +21,7 @@ export default function Home() {
             <div className="flex items-center gap-3 text-sm text-neutral-400 mb-6">
               <span className="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/5 px-3 py-1.5 text-emerald-400/80">
                 <span className="h-2 w-2 rounded-full bg-emerald-500/80" />
-                Müsait
+                Available
               </span>
               <span className="inline-flex items-center gap-1.5">
                 <FiMapPin className="h-4 w-4" />
@@ -39,10 +39,10 @@ export default function Home() {
 
             <div className="mt-8 space-y-4 text-lg text-neutral-400 leading-relaxed max-w-xl">
               <p>
-                Merhaba! Ben Mert. Konya Teknik Üniversitesi Bilgisayar Mühendisliği son sınıf öğrencisiyim.
+                Hello! I'm Mert. I'm a final year Computer Engineering student at Konya Technical University.
               </p>
               <p>
-                Yazılım geliştirmeye ilgi duyuyorum. Java, web teknolojileri ve veritabanı sistemleri üzerine çalışıyorum. Yeni şeyler öğrenmeye ve kendimi geliştirmeye açığım.
+                I'm interested in software development. I work on Java, web technologies, and database systems. I'm open to learning new things and improving myself.
               </p>
             </div>
 
@@ -51,14 +51,14 @@ export default function Home() {
                 to="/about"
                 className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-base font-medium text-neutral-900 hover:bg-neutral-200 transition-colors"
               >
-                Hakkımda
+                About Me
                 <FiArrowUpRight className="h-5 w-5" />
               </Link>
               <Link
                 to="/contact"
                 className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-base font-medium text-white hover:bg-white/5 hover:border-white/30 transition-all"
               >
-                İletişim
+                Contact
               </Link>
             </div>
 

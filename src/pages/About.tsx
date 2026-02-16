@@ -6,7 +6,7 @@ import { profile } from '../data/profile'
 export default function About() {
   return (
     <section className="mx-auto max-w-4xl px-6 py-16">
-      <SectionHeading title="Hakkımda" />
+      <SectionHeading title="About Me" />
 
       {/* Profile */}
       <Reveal className="mt-12">
@@ -34,7 +34,7 @@ export default function About() {
 
       {/* Education */}
       <Reveal className="mt-20">
-        <h3 className="text-2xl font-semibold text-white mb-8">Eğitim</h3>
+          <h3 className="text-2xl font-semibold text-white mb-8">Education</h3>
         <div className="space-y-6">
           {profile.education.map((edu) => (
             <div key={edu.school} className="flex gap-6 p-6 rounded-2xl border border-white/10 bg-white/[0.02] hover:border-white/20 transition-colors">
@@ -54,7 +54,7 @@ export default function About() {
       {/* Languages & Hobbies */}
       <div className="mt-20 grid gap-10 md:grid-cols-2">
         <Reveal>
-          <h3 className="text-2xl font-semibold text-white mb-6">Diller</h3>
+          <h3 className="text-2xl font-semibold text-white mb-6">Languages</h3>
           <div className="space-y-5">
             {profile.languages.map((lang) => (
               <div key={lang.name}>
@@ -74,7 +74,7 @@ export default function About() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <h3 className="text-2xl font-semibold text-white mb-6">İlgi Alanları</h3>
+          <h3 className="text-2xl font-semibold text-white mb-6">Interests</h3>
           <div className="flex flex-wrap gap-3">
             {profile.hobbies.map((h) => (
               <span

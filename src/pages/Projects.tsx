@@ -6,7 +6,7 @@ import { profile } from '../data/profile'
 export default function Projects() {
   return (
     <section className="mx-auto max-w-5xl px-6 py-16">
-      <SectionHeading title="Projeler" description="Üzerinde çalıştığım projeler" />
+      <SectionHeading title="Projects" description="Projects I've worked on" />
 
       <div className="mt-12 space-y-6">
         {profile.projects.map((project, index) => (
@@ -26,7 +26,7 @@ export default function Projects() {
                     {project.featured && (
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 text-neutral-400 text-sm border border-white/10">
                         <FiStar className="h-4 w-4" />
-                        Öne Çıkan
+                        Featured
                       </span>
                     )}
                   </div>
@@ -63,7 +63,7 @@ export default function Projects() {
           className="inline-flex items-center gap-3 px-8 py-4 rounded-full border border-white/10 text-white hover:bg-white/5 hover:border-white/20 transition-colors"
         >
           <FiGithub className="h-5 w-5" />
-          Tüm projeler için GitHub profilimi ziyaret edin
+          Visit my GitHub profile for all projects
           <FiArrowUpRight className="h-5 w-5" />
         </a>
       </Reveal>

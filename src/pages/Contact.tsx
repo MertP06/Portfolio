@@ -7,14 +7,14 @@ import { profile } from '../data/profile'
 export default function Contact() {
   return (
     <section className="mx-auto max-w-5xl px-6 py-16">
-      <SectionHeading title="İletişim" description="Benimle iletişime geçmekten çekinmeyin" />
+      <SectionHeading title="Contact" description="Feel free to reach out to me" />
 
       <div className="mt-12 grid gap-12 lg:grid-cols-5 items-stretch">
         {/* Form - wider */}
         <Reveal className="lg:col-span-3">
           <div className="p-8 rounded-2xl border border-white/10 bg-white/[0.02] h-full flex flex-col">
-            <h3 className="text-xl font-semibold text-white mb-2">Mesaj Gönderin</h3>
-            <p className="text-neutral-500 mb-8">Formu doldurun, en kısa sürede dönüş yapacağım.</p>
+            <h3 className="text-xl font-semibold text-white mb-2">Send a Message</h3>
+            <p className="text-neutral-500 mb-8">Fill out the form, I'll get back to you as soon as possible.</p>
             <div className="flex-1 flex flex-col">
               <ContactForm />
             </div>
@@ -31,7 +31,7 @@ export default function Contact() {
             <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center mb-4">
               <FiMail className="h-5 w-5 text-neutral-300" />
             </div>
-            <p className="text-sm text-neutral-500 mb-1">E-posta</p>
+            <p className="text-sm text-neutral-500 mb-1">Email</p>
             <p className="text-white group-hover:text-neutral-200 transition-colors">{profile.contact.email}</p>
           </a>
 
@@ -40,13 +40,13 @@ export default function Contact() {
             <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center mb-4">
               <FiMapPin className="h-5 w-5 text-neutral-300" />
             </div>
-            <p className="text-sm text-neutral-500 mb-1">Konum</p>
+            <p className="text-sm text-neutral-500 mb-1">Location</p>
             <p className="text-white">{profile.location}</p>
           </div>
 
           {/* Social */}
           <div className="p-6 rounded-2xl border border-white/10 bg-white/[0.02]">
-            <p className="text-sm text-neutral-500 mb-4">Sosyal Medya</p>
+            <p className="text-sm text-neutral-500 mb-4">Social Media</p>
             <div className="flex gap-3">
               {[
                 { icon: FiGithub, href: profile.contact.github },
@@ -71,8 +71,8 @@ export default function Contact() {
             <div className="flex items-center gap-3">
               <span className="h-3 w-3 rounded-full bg-emerald-500/70" />
               <div>
-                <p className="text-emerald-400/80 font-medium">Müsait</p>
-                <p className="text-sm text-neutral-500">Staj ve proje teklifleri</p>
+                <p className="text-emerald-400/80 font-medium">Available</p>
+                <p className="text-sm text-neutral-500">Open to internship and project opportunities</p>
               </div>
             </div>
           </div>

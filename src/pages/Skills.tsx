@@ -4,16 +4,16 @@ import SectionHeading from '../components/SectionHeading'
 import { profile } from '../data/profile'
 
 const skillGroups = [
-  { label: 'Programlama Dilleri', icon: FiCode, items: profile.skills.languages },
-  { label: 'Web Teknolojileri', icon: FiGlobe, items: profile.skills.web },
-  { label: 'Veritabanı', icon: FiDatabase, items: profile.skills.database },
-  { label: 'Araçlar', icon: FiTool, items: profile.skills.tools },
+  { label: 'Programming Languages', icon: FiCode, items: profile.skills.languages },
+  { label: 'Web Technologies', icon: FiGlobe, items: profile.skills.web },
+  { label: 'Database', icon: FiDatabase, items: profile.skills.database },
+  { label: 'Tools', icon: FiTool, items: profile.skills.tools },
 ]
 
 export default function Skills() {
   return (
     <section className="mx-auto max-w-5xl px-6 py-16">
-      <SectionHeading title="Yetenekler" description="Öğrendiğim ve üzerinde çalıştığım teknolojiler" />
+      <SectionHeading title="Skills" description="Technologies I've learned and worked with" />
 
       <div className="mt-12 grid gap-8 md:grid-cols-2">
         {skillGroups.map((group, index) => {
@@ -51,7 +51,7 @@ export default function Skills() {
 
       {/* Languages */}
       <Reveal className="mt-16">
-        <h3 className="text-2xl font-semibold text-white mb-8">Diller</h3>
+        <h3 className="text-2xl font-semibold text-white mb-8">Languages</h3>
         <div className="grid gap-6 md:grid-cols-2">
           {profile.languages.map((lang) => (
             <div key={lang.name} className="p-6 rounded-2xl border border-white/10 bg-white/[0.02]">
@@ -72,7 +72,7 @@ export default function Skills() {
 
       <Reveal className="mt-12 text-center">
         <p className="text-neutral-500">
-          Seviyeler kendi değerlendirmeme göredir. Öğrenmeye devam ediyorum.
+          Levels are based on my self-assessment. I continue to learn.
         </p>
       </Reveal>
     </section>

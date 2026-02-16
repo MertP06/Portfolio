@@ -13,7 +13,7 @@ const NotFound = lazy(() => import('./pages/NotFound'))
 
 const fallback = (
   <div className="grid min-h-[70vh] place-items-center text-sm text-neutral-400">
-    Yükleniyor...
+    Loading...
   </div>
 )
 

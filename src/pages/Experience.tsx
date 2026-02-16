@@ -6,7 +6,7 @@ import { profile } from '../data/profile'
 export default function Experience() {
   return (
     <section className="mx-auto max-w-4xl px-6 py-16">
-      <SectionHeading title="Deneyim" description="İş deneyimim ve eğitim geçmişim" />
+      <SectionHeading title="Experience" description="My work experience and education background" />
 
       {/* Work Experience */}
       <Reveal className="mt-12">
@@ -50,7 +50,7 @@ export default function Experience() {
           <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center">
             <FiBookOpen className="h-6 w-6 text-neutral-300" />
           </div>
-          <h2 className="text-2xl font-semibold text-white">Eğitim</h2>
+          <h2 className="text-2xl font-semibold text-white">Education</h2>
         </div>
 
         <div className="space-y-6">
@@ -71,7 +71,7 @@ export default function Experience() {
         <div className="p-8 rounded-2xl border border-emerald-500/10 bg-emerald-500/5 text-center">
           <div className="flex items-center justify-center gap-3">
             <span className="h-3 w-3 rounded-full bg-emerald-500/70" />
-            <span className="text-lg text-emerald-400/80">Staj ve proje tekliflerine açığım</span>
+            <span className="text-lg text-emerald-400/80">Open to internship and project opportunities</span>
           </div>
         </div>
       </Reveal>
