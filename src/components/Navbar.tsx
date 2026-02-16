@@ -42,8 +42,11 @@ export default function Navbar() {
         scrolled ? 'bg-neutral-950/90 backdrop-blur-sm border-b border-white/5' : 'bg-transparent'
       }`}
     >
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        {/* Desktop Navigation */}
+      <nav className="mx-auto flex max-w-6xl items-center px-6 py-4">
+        {/* Spacer for centering */}
+        <div className="hidden md:flex flex-1"></div>
+        
+        {/* Desktop Navigation - Centered */}
         <div className="hidden items-center gap-1 text-sm text-neutral-400 md:flex">
           {navItems.map((item) => (
             <NavLink
@@ -63,7 +66,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex flex-1 items-center justify-end gap-3">
           <a
             className="hidden sm:inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-4 py-2 text-sm font-medium text-white hover:bg-white/15 transition-colors"
             href={profile.contact.email ? `mailto:${profile.contact.email}` : '#'}
