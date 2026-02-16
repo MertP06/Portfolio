@@ -39,7 +39,7 @@ export default function Home() {
 
             <div className="mt-8 space-y-4 text-lg text-neutral-400 leading-relaxed max-w-xl">
               <p>
-                Hello! I'm Mert. I'm a final year Computer Engineering student at Konya Technical University.
+                Hello! I'm Mert. I'm a final year Computer Engineering student at Konya Teknik Üniversitesi.
               </p>
               <p>
                 I'm interested in software development. I work on Java, web technologies, and database systems. I'm open to learning new things and improving myself.

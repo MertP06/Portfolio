@@ -10,7 +10,7 @@ export const profile = {
   summary:
     'Final year Computer Engineering student at KTÜN. I have school projects and internship experience.',
   about: [
-    'I am a final year Computer Engineering student at Konya Technical University.',
+    'I am a final year Computer Engineering student at Konya Teknik Üniversitesi.',
     'I work on Java and web technologies.',
   ],
   highlights: [
@@ -84,7 +84,7 @@ export const profile = {
   experience: [
     {
       role: 'Intern',
-      company: 'Information and Communication Technologies Authority (BTK)',
+      company: 'Bilgi Teknolojileri ve İletişim Kurumu (BTK)',
       period: 'Jun 2025 - Jul 2025',
       location: 'Ankara',
       details: [
@@ -95,13 +95,13 @@ export const profile = {
   ],
   education: [
     {
-      school: 'Konya Technical University',
+      school: 'Konya Teknik Üniversitesi',
       degree: 'Bachelor\'s · Computer Engineering',
       period: '2022 - 2026',
       description: '',
     },
     {
-      school: 'Süleyman Demirel Anatolian High School',
+      school: 'Süleyman Demirel Anadolu Lisesi',
       degree: 'High School · Science',
       period: '2017 - 2021',
       description: '',
