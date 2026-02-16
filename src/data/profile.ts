@@ -84,7 +84,7 @@ export const profile = {
   experience: [
     {
       role: 'Intern',
-      company: 'Information and Communication Technologies Authority (BTK)',
+      company: 'Bilgi Teknolojileri ve İletişim Kurumu (BTK)',
       period: 'Jun 2025 - Jul 2025',
       location: 'Ankara',
       details: [

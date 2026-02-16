@@ -14,7 +14,7 @@ export default function Experience() {
           <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center">
             <FiBriefcase className="h-6 w-6 text-neutral-300" />
           </div>
-          <h2 className="text-2xl font-semibold text-white">İş Deneyimi</h2>
+          <h2 className="text-2xl font-semibold text-white">Work Experience</h2>
         </div>
 
         <div className="space-y-6">
