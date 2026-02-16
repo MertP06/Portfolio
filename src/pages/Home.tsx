@@ -32,14 +32,14 @@ export default function Home() {
             <h1 className="text-5xl font-bold text-white sm:text-6xl lg:text-7xl tracking-tight">
               {profile.name}
             </h1>
-            
+
             <div className="mt-4 text-2xl text-neutral-400 sm:text-3xl">
               <TypingText texts={profile.titles} speed={80} pauseTime={3000} />
             </div>
 
             <div className="mt-8 space-y-4 text-lg text-neutral-400 leading-relaxed max-w-xl">
               <p>
-                Hello! I'm Mert. I'm a final year Computer Engineering student at Konya Teknik Üniversitesi.
+                Hello! I'm Mert. I'm a final year Computer Engineering student at Konya Technical University.
               </p>
               <p>
                 I'm interested in software development. I work on Java, web technologies, and database systems. I'm open to learning new things and improving myself.
@@ -92,7 +92,7 @@ export default function Home() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              
+
               {/* Stats overlay */}
               <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 flex gap-3">
                 {profile.metrics.map((m) => (
