@@ -43,14 +43,6 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <NavLink
-          to="/"
-          className="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.3em] text-neutral-200 hover:text-white transition-colors"
-        >
-          <span className="h-2.5 w-2.5 rounded-full bg-white/60" />
-          MP
-        </NavLink>
-
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-1 text-sm text-neutral-400 md:flex">
           {navItems.map((item) => (
