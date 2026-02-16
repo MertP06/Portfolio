@@ -8,7 +8,10 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-8">
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <div className="flex items-center gap-6">
-            <Link to="/" className="text-sm font-medium text-neutral-300">
+            <Link 
+              to="/" 
+              className="flex items-center justify-center w-12 h-12 rounded-xl bg-black text-white font-bold text-lg tracking-tight hover:bg-neutral-900 transition-colors shadow-lg"
+            >
               MP
             </Link>
             <div className="flex gap-3">
