@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { FiMenu, FiX } from 'react-icons/fi'
-import { profile } from '../data/profile'
 
 const navItems = [
   { to: '/', label: 'Home', end: true },
