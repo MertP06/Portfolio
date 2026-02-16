@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
-import { FiArrowUpRight, FiMenu, FiX } from 'react-icons/fi'
+import { FiMenu, FiX } from 'react-icons/fi'
 import { profile } from '../data/profile'
 
 const navItems = [
@@ -66,15 +66,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="flex flex-1 items-center justify-end gap-3">
-          <a
-            className="hidden sm:inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-4 py-2 text-sm font-medium text-white hover:bg-white/15 transition-colors"
-            href={profile.contact.email ? `mailto:${profile.contact.email}` : '#'}
-          >
-            Get in Touch
-            <FiArrowUpRight />
-          </a>
-
+        <div className="flex flex-1 items-center justify-end">
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -105,13 +97,6 @@ export default function Navbar() {
                 {item.label}
               </NavLink>
             ))}
-            <a
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-base font-semibold text-neutral-900"
-              href={profile.contact.email ? `mailto:${profile.contact.email}` : '#'}
-            >
-              Get in Touch
-              <FiArrowUpRight />
-            </a>
           </nav>
         </div>
       )}
