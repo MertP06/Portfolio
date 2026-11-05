@@ -53,6 +53,7 @@ export const profile = {
       'GitHub',
       'Android Studio',
       'IntelliJ IDEA',
+      'Eclipse',
       'VS Code',
       'Postman',
       'DBeaver',
