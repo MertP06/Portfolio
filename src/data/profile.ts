@@ -151,8 +151,8 @@ export const profile = {
     },
     {
       role: {
-        en: 'Software Engineering Intern (Frontend Team Lead)',
-        tr: 'Yazılım Mühendisliği Stajyeri (Frontend Ekip Lideri)',
+        en: 'Software Engineering Intern',
+        tr: 'Yazılım Mühendisliği Stajyeri',
       },
       company: {
         en: 'Bilgi Teknolojileri ve İletişim Kurumu (BTK)',
@@ -180,7 +180,7 @@ export const profile = {
           'Kod incelemeleri, dal yönetimi (branching) ve versiyon kontrolü için Git kullandım.',
         ],
       },
-      tags: ['React', 'Java', 'PostgreSQL', 'Git', 'Frontend Lead', 'Teamwork'],
+      tags: ['React', 'Java', 'PostgreSQL', 'Git', 'Frontend', 'Teamwork'],
     },
   ] as ExperienceItem[],
 
