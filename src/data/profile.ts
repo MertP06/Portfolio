@@ -64,16 +64,6 @@ export const profile = {
 
   projects: [
     {
-      name: 'Hospital ER Management System',
-      description: {
-        en: 'BSc Graduation Project (Capstone) — An end-to-end triage and emergency room management web platform. Designed to dynamically prioritize patients based on urgency levels (Red/Yellow/Green), manage bed allocation, and track live ER status with Spring Boot REST APIs, React, and PostgreSQL.',
-        tr: 'Lisans Bitirme Projesi — Hastane acil servis süreçleri için uçtan uca triyaj ve hasta yönetim platformu. Hastaları aciliyet seviyelerine (Kırmızı/Sarı/Yeşil) göre dinamik önceliklendiren, doktor ve yatak atamalarını yöneten, Spring Boot REST API ve React ile canlı takip imkanı sunan sistem.',
-      },
-      tech: ['Java', 'Spring Boot', 'React', 'PostgreSQL', 'RESTful API', 'Tailwind CSS'],
-      url: 'https://github.com/MertP06/Hospital-ER-Management-System',
-      featured: true,
-    },
-    {
       name: 'VCI Web Application',
       description: {
         en: 'Web application interface modernized for the Visual Computing Incubator (VCI) research project at the University of Bonn. Focused on refactoring component architecture, optimizing UI responsiveness, and maintaining code quality using React and Git in an international research lab.',
@@ -84,16 +74,6 @@ export const profile = {
       isPrivate: true,
     },
     {
-      name: 'Deep Dive',
-      description: {
-        en: 'Term Project — A 2D mobile arcade game developed using Java and the LibGDX framework. Implements custom game physics, dynamic collision detection, sprite animations, sound effects, and responsive touch controls optimized for Android devices.',
-        tr: 'Dönem Projesi — Java ve LibGDX oyun motoru kullanılarak geliştirilmiş 2D mobil arcade oyunu. Dinamik fizik hesaplamaları, çarpışma algılama (collision detection), sprite animasyonları, ses efektleri ve mobil cihazlar için optimize edilmiş dokunmatik kontroller içerir.',
-      },
-      tech: ['Java', 'LibGDX', 'Game Development', 'OOP', 'Android'],
-      url: 'https://github.com/MertP06/Deep-Dive',
-      featured: false,
-    },
-    {
       name: 'Call Center Management System',
       description: {
         en: 'A collaborative team project developed during the mandatory internship at BTK. Served as the Frontend Team Lead using React, while actively communicating with the backend team and contributing to the Java and PostgreSQL service integration.',
@@ -102,6 +82,26 @@ export const profile = {
       tech: ['React', 'Java', 'PostgreSQL', 'Git', 'RESTful API'],
       url: 'https://github.com/MertP06/Call-Center-Management-System',
       featured: true,
+    },
+    {
+      name: 'Hospital ER Management System',
+      description: {
+        en: 'BSc Graduation Project (Capstone) — An end-to-end triage and emergency room management web platform. Designed to dynamically prioritize patients based on urgency levels (Red/Yellow/Green), manage bed allocation, and track live ER status with Spring Boot REST APIs, React, and PostgreSQL.',
+        tr: 'Lisans Bitirme Projesi — Hastane acil servis süreçleri için uçtan uca triyaj ve hasta yönetim platformu. Hastaları aciliyet seviyelerine (Kırmızı/Sarı/Yeşil) göre dinamik önceliklendiren, doktor ve yatak atamalarını yöneten, Spring Boot REST API ve React ile canlı takip imkanı sunan sistem.',
+      },
+      tech: ['Java', 'Spring Boot', 'React', 'PostgreSQL', 'RESTful API', 'Tailwind CSS'],
+      url: 'https://github.com/MertP06/Hospital-ER-Management-System',
+      featured: true,
+    },
+    {
+      name: 'Deep Dive',
+      description: {
+        en: 'Term Project — A 2D mobile arcade game developed using Java and the LibGDX framework. Implements custom game physics, dynamic collision detection, sprite animations, sound effects, and responsive touch controls optimized for Android devices.',
+        tr: 'Dönem Projesi — Java ve LibGDX oyun motoru kullanılarak geliştirilmiş 2D mobil arcade oyunu. Dinamik fizik hesaplamaları, çarpışma algılama (collision detection), sprite animasyonları, ses efektleri ve mobil cihazlar için optimize edilmiş dokunmatik kontroller içerir.',
+      },
+      tech: ['Java', 'LibGDX', 'Game Development', 'OOP', 'Android'],
+      url: 'https://github.com/MertP06/Deep-Dive',
+      featured: false,
     },
     {
       name: 'Neural Network Apple Quality',
