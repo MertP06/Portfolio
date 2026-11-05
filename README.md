@@ -16,7 +16,7 @@
 
 ## 🌟 Highlights & Experience / Öne Çıkanlar & Deneyim
 
-- 🎓 **Education:** BSc in Computer Engineering from **Konya Technical University (KTÜN)** (2022–2026).
+- 🎓 **Education:** BSc in Computer Engineering from **Konya Technical University (KTÜN)** (2022–2026, GPA: 2.84).
 - 🇩🇪 **Erasmus+ Internship:** **Rheinische Friedrich-Wilhelms-Universität Bonn** — Visual Computing Incubator (VCI)
   - **Duration:** 60 days (July 1, 2026 – September 1, 2026)
   - **Focus:** Dedicated **Frontend Web Development**

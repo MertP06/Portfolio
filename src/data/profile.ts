@@ -191,8 +191,8 @@ export const profile = {
         tr: 'Konya Teknik Üniversitesi',
       },
       degree: {
-        en: "Bachelor's Degree · Computer Engineering (Graduated)",
-        tr: 'Lisans · Bilgisayar Mühendisliği (Mezun)',
+        en: "Bachelor's Degree · Computer Engineering (GPA: 2.84)",
+        tr: 'Lisans · Bilgisayar Mühendisliği (GNO: 2.84)',
       },
       period: '2022 – 2026',
     },
