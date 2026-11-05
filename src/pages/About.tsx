@@ -1,4 +1,4 @@
-import { FiMapPin, FiCalendar, FiAward } from 'react-icons/fi'
+import { FiMapPin, FiCalendar } from 'react-icons/fi'
 import Reveal from '../components/Reveal'
 import SectionHeading from '../components/SectionHeading'
 import { profile } from '../data/profile'
@@ -41,15 +41,9 @@ export default function About() {
             <p className="mt-2 text-lg text-neutral-300 font-medium">
               {profile.titles[lang][0]}
             </p>
-            <div className="mt-3 flex flex-wrap items-center gap-4 text-neutral-400 text-sm">
-              <span className="flex items-center gap-1.5">
-                <FiMapPin className="h-4 w-4 text-neutral-500" />
-                {profile.location[lang]}
-              </span>
-              <span className="flex items-center gap-1.5">
-                <FiAward className="h-4 w-4 text-neutral-500" />
-                {lang === 'tr' ? 'KTÜN Mezunu (2026)' : 'KTÜN Graduate (2026)'}
-              </span>
+            <div className="mt-3 flex items-center gap-2 text-neutral-400 text-sm">
+              <FiMapPin className="h-4 w-4 text-neutral-500" />
+              <span>{profile.location[lang]}</span>
             </div>
             <div className="mt-6 space-y-4 text-neutral-300 leading-relaxed text-base">
               <p>{t('about.p1')}</p>

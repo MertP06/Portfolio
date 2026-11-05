@@ -6,7 +6,6 @@ import {
   FiLinkedin,
   FiMail,
   FiMapPin,
-  FiAward,
 } from 'react-icons/fi'
 import Reveal from '../components/Reveal'
 import TypingText from '../components/TypingText'
@@ -42,15 +41,9 @@ export default function Home() {
         <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
           {/* Left - Text */}
           <Reveal>
-            <div className="flex items-center gap-4 text-sm text-neutral-400 mb-6">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-white/10 bg-white/[0.03] text-neutral-300">
-                <FiAward className="h-3.5 w-3.5 text-neutral-400" />
-                {lang === 'tr' ? 'KTÜN Bilgisayar Mühendisliği Mezunu' : 'BSc Computer Engineering Graduate'}
-              </span>
-              <span className="inline-flex items-center gap-1.5 text-neutral-500">
-                <FiMapPin className="h-4 w-4" />
-                {profile.location[lang]}
-              </span>
+            <div className="flex items-center gap-2 text-sm text-neutral-400 mb-6">
+              <FiMapPin className="h-4 w-4 text-neutral-500" />
+              <span>{profile.location[lang]}</span>
             </div>
 
             <h1 className="text-5xl font-bold text-white sm:text-6xl lg:text-7xl tracking-tight">
@@ -61,9 +54,8 @@ export default function Home() {
               <TypingText texts={titles} speed={80} pauseTime={2800} />
             </div>
 
-            <div className="mt-8 space-y-4 text-lg text-neutral-400 leading-relaxed max-w-xl">
-              <p>{t('home.intro1')}</p>
-              <p>{t('home.intro2')}</p>
+            <div className="mt-8 text-lg text-neutral-400 leading-relaxed max-w-xl">
+              <p>{t('home.intro')}</p>
             </div>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">

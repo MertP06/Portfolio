@@ -15,18 +15,14 @@ export const translations: Translations = {
 
   // Home Page
   'home.role': { en: 'Computer Engineer', tr: 'Bilgisayar Mühendisi' },
-  'home.intro1': {
-    en: "Hello! I'm Mert. I graduated with a degree in Computer Engineering from Konya Technical University.",
-    tr: "Merhaba! Ben Mert. Konya Teknik Üniversitesi Bilgisayar Mühendisliği bölümünden mezun oldum.",
-  },
-  'home.intro2': {
-    en: "I completed a 60-day Erasmus internship at the University of Bonn, updating and developing the web application for the Visual Computing Incubator (VCI) project using React and Git.",
-    tr: "Bonn Üniversitesi'nde 60 günlük Erasmus stajımı tamamladım; React ve Git kullanarak Visual Computing Incubator (VCI) projesinin web uygulamasını güncelleyip geliştirdim.",
+  'home.intro': {
+    en: "Hello, I'm Mert. Computer Engineer focusing on Full-Stack Development & modern web technologies. Experienced in building web and desktop applications through internships at BTK and the University of Bonn.",
+    tr: "Merhaba, ben Mert. Full-Stack Geliştirme ve modern web teknolojilerine odaklanan bir Bilgisayar Mühendisiyim. BTK ve Bonn Üniversitesi stajlarım aracılığıyla web ve masaüstü yazılımları geliştirme deneyimine sahibim.",
   },
   'home.aboutBtn': { en: 'About Me', tr: 'Hakkımda' },
   'home.contactBtn': { en: 'Contact', tr: 'İletişim' },
   'home.metric.education': { en: 'Education', tr: 'Eğitim' },
-  'home.metric.educationSub': { en: 'KTÜN Graduate', tr: 'KTÜN Mezun' },
+  'home.metric.educationSub': { en: 'KTÜN', tr: 'KTÜN' },
   'home.metric.internships': { en: 'Internships', tr: 'Stajlar' },
   'home.metric.internshipsSub': { en: 'BTK & Uni Bonn', tr: 'BTK & Uni Bonn' },
   'home.metric.projects': { en: 'Projects', tr: 'Projeler' },
@@ -34,98 +30,99 @@ export const translations: Translations = {
   // About Page
   'about.title': { en: 'About Me', tr: 'Hakkımda' },
   'about.p1': {
-    en: "I am a Computer Engineer graduated from Konya Technical University (Class of 2026).",
-    tr: "Konya Teknik Üniversitesi Bilgisayar Mühendisliği mezunuyum (2026).",
+    en: "I am a Computer Engineer graduated from Konya Technical University. I focus on developing clean, functional, and scalable software solutions.",
+    tr: "Konya Teknik Üniversitesi Bilgisayar Mühendisliği mezunuyum. Temiz, fonksiyonel ve ölçeklenebilir yazılım çözümleri geliştirmeye odaklanıyorum.",
   },
   'about.p2': {
-    en: "During my 60-day Erasmus+ internship (July 1 – September 1, 2026) at Rheinische Friedrich-Wilhelms-Universität Bonn, I contributed to the Visual Computing Incubator (VCI) by updating and maintaining their modern web application with React and Git.",
-    tr: "Rheinische Friedrich-Wilhelms-Universität Bonn bünyesindeki Visual Computing Incubator (VCI) projesinde 60 günlük Erasmus+ stajım (1 Temmuz – 1 Eylül 2026) boyunca, projenin modern web uygulamasını React ve Git teknolojileriyle güncelledim ve geliştirdim.",
+    en: "Throughout my education, I completed two valuable internships: at BTK (Information and Communication Technologies Authority), where I developed desktop applications using Java and MySQL, and at the University of Bonn (Visual Computing Incubator), where I spent 2 months as an Erasmus intern updating and maintaining their web application using React and Git.",
+    tr: "Öğrenim hayatım boyunca iki değerli staj deneyimi edindim: BTK bünyesinde Java ve MySQL ile masaüstü yazılım geliştirme üzerine çalıştım; ardından Bonn Üniversitesi'nde (Visual Computing Incubator) 2 aylık Erasmus stajımla projenin web uygulamasını React ve Git kullanarak güncelledim.",
   },
   'about.p3': {
-    en: "I specialize in Java, web technologies (React, TypeScript, modern frontend), and database systems. I enjoy solving real-world engineering problems and continuously learning new technologies.",
-    tr: "Java, modern web teknolojileri (React, TypeScript) ve veritabanı sistemleri üzerine yoğunlaşıyorum. Gerçek dünya problemlerini çözmeyi ve yeni teknolojiler öğrenmeyi seviyorum.",
+    en: "I work with Java, React, TypeScript, and modern database systems. I am enthusiastic about writing reliable code and exploring new technologies.",
+    tr: "Java, React, TypeScript ve modern veritabanı sistemleri üzerinde çalışıyorum. Güvenilir kod üretmek ve yeni teknolojileri keşfetmekten keyif alıyorum.",
   },
-  'about.educationTitle': { en: 'Education & Academic Background', tr: 'Eğitim & Akademik Geçmiş' },
+  'about.educationTitle': { en: 'Education', tr: 'Eğitim' },
   'about.languagesTitle': { en: 'Languages', tr: 'Diller' },
   'about.interestsTitle': { en: 'Interests', tr: 'İlgi Alanları' },
 
   // Skills Page
-  'skills.title': { en: 'Skills & Technologies', tr: 'Yetenekler & Teknolojiler' },
+  'skills.title': { en: 'Skills', tr: 'Yetenekler' },
   'skills.description': {
-    en: "Technologies, tools, and programming languages I actively work with",
-    tr: 'Aktif olarak çalıştığım ve kullandığım teknolojiler, araçlar ve diller',
+    en: "Technologies and tools I work with",
+    tr: 'Kullandığım teknolojiler ve araçlar',
   },
   'skills.languages': { en: 'Programming Languages', tr: 'Programlama Dilleri' },
-  'skills.web': { en: 'Web Technologies & Frameworks', tr: 'Web Teknolojileri & Kütüphaneler' },
-  'skills.database': { en: 'Databases & Storage', tr: 'Veritabanları' },
-  'skills.tools': { en: 'Developer Tools & Platforms', tr: 'Geliştirici Araçları & Platformlar' },
-  'skills.spoken': { en: 'Spoken Languages', tr: 'Yabancı Diller' },
+  'skills.web': { en: 'Web Technologies', tr: 'Web Teknolojileri' },
+  'skills.database': { en: 'Database', tr: 'Veritabanı' },
+  'skills.tools': { en: 'Tools', tr: 'Araçlar' },
+  'skills.spoken': { en: 'Languages', tr: 'Diller' },
 
   // Experience Page
   'experience.title': { en: 'Experience', tr: 'Deneyim' },
   'experience.description': {
-    en: 'Professional internships and educational milestones',
-    tr: 'Staj deneyimleri ve eğitim kilometre taşları',
+    en: 'Work experience and education background',
+    tr: 'İş deneyimi ve eğitim geçmişi',
   },
-  'experience.workHeading': { en: 'Work & Internship Experience', tr: 'İş & Staj Deneyimi' },
+  'experience.workHeading': { en: 'Work Experience', tr: 'İş & Staj Deneyimi' },
   'experience.eduHeading': { en: 'Education', tr: 'Eğitim' },
 
   // Projects Page
   'projects.title': { en: 'Projects', tr: 'Projeler' },
   'projects.description': {
-    en: 'A selection of software and research projects I have developed',
-    tr: 'Geliştirdiğim yazılım ve araştırma projelerinden seçmeler',
+    en: "Projects I've worked on",
+    tr: 'Geliştirdiğim projeler ve çalışmalar',
   },
   'projects.featured': { en: 'Featured', tr: 'Öne Çıkan' },
+  'projects.privateRepo': { en: 'Private Repository (Academic / Research)', tr: 'Gizli Depo (Akademik / Araştırma)' },
   'projects.allGithub': {
-    en: 'View all repositories on GitHub',
-    tr: "GitHub'daki tüm depolarımı görüntüle",
+    en: 'Visit my GitHub profile for all open-source projects',
+    tr: "Açık kaynaklı projelerim için GitHub profilimi ziyaret edin",
   },
 
   // Contact Page
   'contact.title': { en: 'Contact', tr: 'İletişim' },
   'contact.description': {
-    en: "Let's get in touch for collaborations, opportunities, or questions",
-    tr: 'İş birliği, fırsatlar veya sorularınız için iletişime geçebilirsiniz',
+    en: "Feel free to reach out to me",
+    tr: 'Benimle iletişime geçebilirsiniz',
   },
   'contact.sendMessage': { en: 'Send a Message', tr: 'Mesaj Gönderin' },
   'contact.formDesc': {
-    en: "Fill out the form below and I will get back to you promptly.",
-    tr: 'Aşağıdaki formu doldurun, en kısa sürede size geri dönüş yapayım.',
+    en: "Fill out the form below and I'll get back to you as soon as possible.",
+    tr: 'Formu doldurun, en kısa sürede size dönüş yapayım.',
   },
   'contact.nameLabel': { en: 'Name', tr: 'Ad Soyad' },
   'contact.namePlaceholder': { en: 'Your Name', tr: 'Adınız Soyadınız' },
   'contact.emailLabel': { en: 'Email', tr: 'E-posta' },
   'contact.emailPlaceholder': { en: 'example@email.com', tr: 'ornek@email.com' },
-  'contact.msgLabel': { en: 'Message', tr: 'Mesajınız' },
+  'contact.msgLabel': { en: 'Message', tr: 'Mesaj' },
   'contact.msgPlaceholder': { en: 'Write your message here...', tr: 'Mesajınızı buraya yazın...' },
   'contact.sendBtn': { en: 'Send Message', tr: 'Mesajı Gönder' },
   'contact.sending': { en: 'Sending...', tr: 'Gönderiliyor...' },
   'contact.sent': { en: 'Sent Successfully!', tr: 'Başarıyla Gönderildi!' },
-  'contact.error': { en: 'Something went wrong', tr: 'Bir hata oluştu' },
+  'contact.error': { en: 'An error occurred', tr: 'Bir hata oluştu' },
   'contact.locationTitle': { en: 'Location', tr: 'Konum' },
-  'contact.socialTitle': { en: 'Social Profiles', tr: 'Sosyal Medya' },
+  'contact.socialTitle': { en: 'Social Media', tr: 'Sosyal Medya' },
 
   // Not Found
   'notfound.title': { en: 'Page Not Found', tr: 'Sayfa Bulunamadı' },
   'notfound.desc': {
     en: "The page you're looking for does not exist or has been moved.",
-    tr: 'Aradığınız sayfa mevcut değil veya taşınmış olabilir.',
+    tr: 'Aradığınız sayfa bulunamadı veya taşınmış olabilir.',
   },
-  'notfound.backHome': { en: 'Back to Home', tr: 'Ana Sayfaya Dön' },
+  'notfound.backHome': { en: 'Return to Home', tr: 'Ana Sayfaya Dön' },
 
   // Spoken Language levels
   'lang.turkish': { en: 'Turkish', tr: 'Türkçe' },
   'lang.turkishLevel': { en: 'Native', tr: 'Ana Dil' },
   'lang.english': { en: 'English', tr: 'İngilizce' },
-  'lang.englishLevel': { en: 'Professional / B1', tr: 'Mesleki / B1' },
+  'lang.englishLevel': { en: 'B1', tr: 'B1' },
 
   // Hobbies
   'hobby.music': { en: 'Music', tr: 'Müzik' },
   'hobby.gaming': { en: 'Gaming', tr: 'Oyun' },
   'hobby.travel': { en: 'Travel', tr: 'Seyahat' },
-  'hobby.cinema': { en: 'Movies & TV Series', tr: 'Sinema & Dizi' },
-  'hobby.tech': { en: 'Emerging Tech', tr: 'Yeni Teknolojiler' },
+  'hobby.cinema': { en: 'Movies & TV Shows', tr: 'Film & Dizi' },
+  'hobby.tech': { en: 'Technology', tr: 'Teknoloji' },
 }
 
 interface LanguageContextType {
@@ -141,7 +138,6 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>(() => {
     const saved = localStorage.getItem('portfolio_lang') as Lang
     if (saved === 'en' || saved === 'tr') return saved
-    // Default to Turkish or English based on browser
     return navigator.language.startsWith('tr') ? 'tr' : 'en'
   })
 

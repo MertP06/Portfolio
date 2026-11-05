@@ -1,3 +1,12 @@
+export interface ProjectItem {
+  name: string
+  description: { en: string; tr: string }
+  tech: string[]
+  url?: string
+  featured: boolean
+  isPrivate?: boolean
+}
+
 export interface ExperienceItem {
   role: { en: string; tr: string }
   company: { en: string; tr: string }
@@ -43,6 +52,16 @@ export const profile = {
 
   projects: [
     {
+      name: 'VCI Web Application',
+      description: {
+        en: 'Updated, maintained, and optimized the web application for the Visual Computing Incubator (VCI) research project at the University of Bonn.',
+        tr: 'Bonn Üniversitesi bünyesindeki Visual Computing Incubator (VCI) araştırma projesinin web uygulamasının güncellenmesi, bakımı ve optimizasyonu.',
+      },
+      tech: ['React', 'JavaScript', 'Git', 'CSS3'],
+      featured: true,
+      isPrivate: true,
+    },
+    {
       name: 'Hospital ER Management System',
       description: {
         en: 'Hospital emergency room triage management system with patient prioritization and live status tracking.',
@@ -82,17 +101,17 @@ export const profile = {
       url: 'https://github.com/MertP06/Neural-Network-Apple-Quality',
       featured: false,
     },
-  ],
+  ] as ProjectItem[],
 
   experience: [
     {
       role: {
-        en: 'Erasmus Intern (Web Developer)',
-        tr: 'Erasmus Stajyeri (Web Geliştirici)',
+        en: 'Intern Student (Erasmus+)',
+        tr: 'Stajyer Öğrenci (Erasmus+)',
       },
       company: {
         en: 'Rheinische Friedrich-Wilhelms-Universität Bonn · Visual Computing Incubator (VCI)',
-        tr: 'Bonn Üniversitesi (Uni Bonn) · Visual Computing Incubator (VCI)',
+        tr: 'Rheinische Friedrich-Wilhelms-Universität Bonn · Visual Computing Incubator (VCI)',
       },
       period: {
         en: '1 Jul 2026 – 1 Sep 2026 (60 Days)',
@@ -105,26 +124,26 @@ export const profile = {
       details: {
         en: [
           'Completed a 60-day Erasmus+ internship within the Visual Computing Incubator (VCI) project.',
-          'Updated, maintained, and refactored the web application interface using React.',
-          'Collaborated with the research team using Git for version control, issue tracking, and code reviews.',
-          'Worked in an international academic setting focused on high-precision 3D/4D imaging and VR/XR.',
+          'Updated and maintained the project web application using React.',
+          'Used Git for version control, collaborative development, and workflow management.',
+          'Gained international hands-on experience in an academic research environment.',
         ],
         tr: [
-          'Visual Computing Incubator (VCI) araştırma projesinde 60 günlük Erasmus+ stajımı tamamladım.',
-          'React teknolojisi ile projenin web uygulaması arayüzünü güncelledim, modernize ettim ve bakımını yaptım.',
-          'Versiyon yönetimi, kod incelemeleri ve ekip içi koordinasyon için Git kullandım.',
-          'Yüksek hassasiyetli 3D/4D görüntüleme ve VR/XR odaklı uluslararası bir araştırma ortamında tecrübe kazandım.',
+          'Visual Computing Incubator (VCI) projesinde 60 günlük Erasmus+ stajımı tamamladım.',
+          'React kullanarak projenin web uygulamasını güncelledim ve geliştirdim.',
+          'Versiyon kontrolü, iş akışı ve ekip içi koordinasyon için Git kullandım.',
+          'Akademik bir araştırma ortamında uluslararası çalışma tecrübesi edindim.',
         ],
       },
       tags: ['React', 'Git', 'Web Development', 'Erasmus+'],
     },
     {
       role: {
-        en: 'Software Engineering Intern',
-        tr: 'Yazılım Mühendisliği Stajyeri',
+        en: 'Intern (Software Engineering)',
+        tr: 'Stajyer (Yazılım Mühendisliği)',
       },
       company: {
-        en: 'Information and Communication Technologies Authority (BTK)',
+        en: 'Bilgi Teknolojileri ve İletişim Kurumu (BTK)',
         tr: 'Bilgi Teknolojileri ve İletişim Kurumu (BTK)',
       },
       period: {
@@ -137,42 +156,31 @@ export const profile = {
       },
       details: {
         en: [
-          'Completed a 20-day mandatory engineering internship.',
-          'Designed and built a desktop Call Center Management System using Java and Swing.',
-          'Implemented relational database operations with MySQL.',
+          'Completed 20-day mandatory engineering internship.',
+          'Developed a desktop Call Center Management System using Java and Swing.',
+          'Integrated relational database operations and CRUD architecture with MySQL.',
         ],
         tr: [
-          '20 iş günlük zorunlu mühendislik stajı tamamlandı.',
-          'Java ve Swing teknolojileriyle masaüstü Çağrı Merkezi Yönetim Sistemi geliştirildi.',
-          'MySQL ile ilişkisel veritabanı modellemesi ve CRUD operasyonları gerçekleştirildi.',
+          '20 günlük zorunlu mühendislik stajı tamamlandı.',
+          'Java ve Swing ile masaüstü Çağrı Merkezi Yönetim Sistemi geliştirildi.',
+          'MySQL ile ilişkisel veritabanı CRUD işlemleri ve veri yönetimi sağlandı.',
         ],
       },
-      tags: ['Java', 'Swing', 'MySQL'],
+      tags: ['Java', 'Swing', 'MySQL', 'Desktop'],
     },
   ] as ExperienceItem[],
 
   education: [
     {
       school: {
-        en: 'Konya Technical University (KTÜN)',
-        tr: 'Konya Teknik Üniversitesi (KTÜN)',
+        en: 'Konya Technical University',
+        tr: 'Konya Teknik Üniversitesi',
       },
       degree: {
-        en: "Bachelor of Science · Computer Engineering (Graduated)",
+        en: "Bachelor's Degree · Computer Engineering (Graduated)",
         tr: 'Lisans · Bilgisayar Mühendisliği (Mezun)',
       },
       period: '2022 – 2026',
-    },
-    {
-      school: {
-        en: 'Rheinische Friedrich-Wilhelms-Universität Bonn',
-        tr: 'Rheinische Friedrich-Wilhelms-Universität Bonn',
-      },
-      degree: {
-        en: 'Erasmus+ Internship · Visual Computing Incubator (VCI)',
-        tr: 'Erasmus+ Stajı · Visual Computing Incubator (VCI)',
-      },
-      period: '01.07.2026 – 01.09.2026',
     },
     {
       school: {
