@@ -52,9 +52,10 @@ export const translations: Translations = {
     tr: 'Kullandığım teknolojiler ve araçlar',
   },
   'skills.languages': { en: 'Programming Languages', tr: 'Programlama Dilleri' },
-  'skills.web': { en: 'Web Technologies', tr: 'Web Teknolojileri' },
+  'skills.web': { en: 'Web & Backend Technologies', tr: 'Web & Backend Teknolojileri' },
+  'skills.mobile': { en: 'Mobile Development', tr: 'Mobil Geliştirme' },
   'skills.database': { en: 'Database', tr: 'Veritabanı' },
-  'skills.tools': { en: 'Tools', tr: 'Araçlar' },
+  'skills.tools': { en: 'Tools & IDEs', tr: 'Araçlar & IDE\'ler' },
   'skills.spoken': { en: 'Languages', tr: 'Diller' },
 
   // Experience Page

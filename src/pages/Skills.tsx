@@ -1,4 +1,4 @@
-import { FiCode, FiGlobe, FiDatabase, FiTool } from 'react-icons/fi'
+import { FiCode, FiGlobe, FiDatabase, FiTool, FiSmartphone } from 'react-icons/fi'
 import Reveal from '../components/Reveal'
 import SectionHeading from '../components/SectionHeading'
 import { profile } from '../data/profile'
@@ -17,6 +17,11 @@ export default function Skills() {
       labelKey: 'skills.web',
       icon: FiGlobe,
       items: profile.skills.web,
+    },
+    {
+      labelKey: 'skills.mobile',
+      icon: FiSmartphone,
+      items: profile.skills.mobile,
     },
     {
       labelKey: 'skills.database',

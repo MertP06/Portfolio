@@ -45,15 +45,16 @@ export const profile = {
   },
 
   skills: {
-    languages: ['Java', 'JavaScript', 'TypeScript', 'Python', 'C'],
-    web: ['React', 'HTML5', 'CSS3', 'Tailwind CSS', 'Spring Boot', 'RESTful APIs', 'Vite'],
+    languages: ['Java', 'C', 'Python', 'JavaScript', 'Dart'],
+    web: ['React', 'Spring Boot', 'RESTful APIs', 'HTML5', 'CSS3', 'Tailwind CSS', 'Vite'],
+    mobile: ['Java (Android)', 'Flutter', 'LibGDX'],
     database: ['PostgreSQL', 'SQL'],
     tools: [
       'Git',
       'GitHub',
-      'VS Code',
-      'IntelliJ IDEA',
       'Android Studio',
+      'IntelliJ IDEA',
+      'VS Code',
       'Postman',
       'DBeaver',
       'pgAdmin 4',
