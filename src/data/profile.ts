@@ -57,8 +57,7 @@ export const profile = {
       'VS Code',
       'Postman',
       'DBeaver',
-      'pgAdmin 4',
-      'SSMS',
+      'SQL Server Management Studio (SSMS)',
     ],
   },
 
