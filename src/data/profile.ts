@@ -63,56 +63,72 @@ export const profile = {
 
   projects: [
     {
-      name: 'VCI Web Application',
-      description: {
-        en: 'Updated, maintained, and optimized the web application for the Visual Computing Incubator (VCI) research project at the University of Bonn.',
-        tr: 'Bonn Üniversitesi bünyesindeki Visual Computing Incubator (VCI) araştırma projesinin web uygulamasının güncellenmesi, bakımı ve optimizasyonu.',
-      },
-      tech: ['React', 'JavaScript', 'Git', 'CSS3'],
-      featured: true,
-      isPrivate: true,
-    },
-    {
       name: 'Hospital ER Management System',
       badge: {
         en: 'Graduation Project',
         tr: 'Bitirme Projesi',
       },
       description: {
-        en: 'BSc Graduation Project (Capstone) — Hospital emergency room triage management system with real-time patient prioritization and status tracking.',
-        tr: 'Lisans Bitirme Projesi — Hastane acil servis triyaj, gerçek zamanlı hasta önceliklendirme ve süreç takip sistemi.',
+        en: 'BSc Graduation Project (Capstone) — An end-to-end triage and emergency room management web platform. Designed to dynamically prioritize patients based on urgency levels (Red/Yellow/Green), manage bed allocation, and track live ER status with Spring Boot REST APIs, React, and PostgreSQL.',
+        tr: 'Lisans Bitirme Projesi — Hastane acil servis süreçleri için uçtan uca triyaj ve hasta yönetim platformu. Hastaları aciliyet seviyelerine (Kırmızı/Sarı/Yeşil) göre dinamik önceliklendiren, doktor ve yatak atamalarını yöneten, Spring Boot REST API ve React ile canlı takip imkanı sunan sistem.',
       },
-      tech: ['Java', 'Spring Boot', 'React', 'PostgreSQL', 'RESTful API'],
+      tech: ['Java', 'Spring Boot', 'React', 'PostgreSQL', 'RESTful API', 'Tailwind CSS'],
       url: 'https://github.com/MertP06/Hospital-ER-Management-System',
       featured: true,
     },
     {
-      name: 'Call Center Management System',
-      description: {
-        en: 'Call center management desktop application developed during mandatory internship at BTK.',
-        tr: 'BTK zorunlu stajı kapsamında geliştirilen çağrı merkezi yönetim masaüstü uygulaması.',
+      name: 'VCI Web Application',
+      badge: {
+        en: 'Erasmus+ Research',
+        tr: 'Erasmus+ Araştırma',
       },
-      tech: ['Java', 'Swing', 'PostgreSQL', 'Git'],
+      description: {
+        en: 'Web application interface modernized for the Visual Computing Incubator (VCI) research project at the University of Bonn. Focused on refactoring component architecture, optimizing UI responsiveness, and maintaining code quality using React and Git in an international research lab.',
+        tr: 'Bonn Üniversitesi Visual Computing Incubator (VCI) araştırma altyapısı için modernize edilen web uygulaması. Uluslararası bir araştırma laboratuvarı ortamında React ve Git kullanılarak bileşen mimarisinin yenilenmesi, arayüz optimizasyonu ve kod bakımı gerçekleştirildi.',
+      },
+      tech: ['React', 'JavaScript', 'Git', 'CSS3', 'Responsive Design'],
+      featured: true,
+      isPrivate: true,
+    },
+    {
+      name: 'Deep Dive',
+      badge: {
+        en: 'Term Project',
+        tr: 'Dönem Projesi',
+      },
+      description: {
+        en: 'Term Project — A 2D mobile arcade game developed using Java and the LibGDX framework. Implements custom game physics, dynamic collision detection, sprite animations, sound effects, and responsive touch controls optimized for Android devices.',
+        tr: 'Dönem Projesi — Java ve LibGDX oyun motoru kullanılarak geliştirilmiş 2D mobil arcade oyunu. Dinamik fizik hesaplamaları, çarpışma algılama (collision detection), sprite animasyonları, ses efektleri ve mobil cihazlar için optimize edilmiş dokunmatik kontroller içerir.',
+      },
+      tech: ['Java', 'LibGDX', 'Game Development', 'OOP', 'Android'],
+      url: 'https://github.com/MertP06/Deep-Dive',
+      featured: true,
+    },
+    {
+      name: 'Call Center Management System',
+      badge: {
+        en: 'Internship Project',
+        tr: 'Staj Projesi',
+      },
+      description: {
+        en: 'Desktop management system built during the mandatory internship at BTK. Features customer records management, call logging, representative workflow tracking, and relational data persistence using Java Swing and PostgreSQL.',
+        tr: 'BTK zorunlu mühendislik stajında geliştirilen masaüstü yönetim sistemi. Müşteri kayıtları, çağrı geçmişi, temsilci operasyonları ve PostgreSQL veritabanı CRUD işlemlerini Java Swing arayüzü ile yönetir.',
+      },
+      tech: ['Java', 'Swing', 'PostgreSQL', 'Git', 'JDBC'],
       url: 'https://github.com/MertP06/Call-Center-Management-System',
       featured: true,
     },
     {
-      name: 'Deep Dive',
-      description: {
-        en: '2D mobile game project developed using Java and LibGDX framework.',
-        tr: 'Java ve LibGDX oyun motoru kullanılarak geliştirilmiş 2D mobil oyun projesi.',
-      },
-      tech: ['Java', 'LibGDX'],
-      url: 'https://github.com/MertP06/Deep-Dive',
-      featured: false,
-    },
-    {
       name: 'Neural Network Apple Quality',
-      description: {
-        en: 'Quality classification and prediction system utilizing Artificial Neural Networks.',
-        tr: 'Yapay sinir ağları kullanılarak elma kalite sınıflandırması ve tahmin sistemi.',
+      badge: {
+        en: 'Machine Learning',
+        tr: 'Makine Öğrenmesi',
       },
-      tech: ['Python', 'TensorFlow'],
+      description: {
+        en: 'Deep Learning project implementing Artificial Neural Networks (ANN) to classify fruit quality metrics (sweetness, firmness, size, etc.). Features data preprocessing, model training, evaluation metrics, and prediction pipelines.',
+        tr: 'Yapay Sinir Ağları (YSA/ANN) mimarisi kullanılarak meyve kalite metriklerini (tatlılık, sertlik, boyut vb.) analiz edip sınıflandıran derin öğrenme projesi. Veri önişleme, model eğitimi ve doğruluk analizi aşamalarını içerir.',
+      },
+      tech: ['Python', 'TensorFlow', 'Neural Networks', 'Pandas', 'NumPy'],
       url: 'https://github.com/MertP06/Neural-Network-Apple-Quality',
       featured: false,
     },
