@@ -5,7 +5,6 @@ export interface ProjectItem {
   url?: string
   featured: boolean
   isPrivate?: boolean
-  badge?: { en: string; tr: string }
 }
 
 export interface ExperienceItem {
@@ -64,10 +63,6 @@ export const profile = {
   projects: [
     {
       name: 'Hospital ER Management System',
-      badge: {
-        en: 'Graduation Project',
-        tr: 'Bitirme Projesi',
-      },
       description: {
         en: 'BSc Graduation Project (Capstone) — An end-to-end triage and emergency room management web platform. Designed to dynamically prioritize patients based on urgency levels (Red/Yellow/Green), manage bed allocation, and track live ER status with Spring Boot REST APIs, React, and PostgreSQL.',
         tr: 'Lisans Bitirme Projesi — Hastane acil servis süreçleri için uçtan uca triyaj ve hasta yönetim platformu. Hastaları aciliyet seviyelerine (Kırmızı/Sarı/Yeşil) göre dinamik önceliklendiren, doktor ve yatak atamalarını yöneten, Spring Boot REST API ve React ile canlı takip imkanı sunan sistem.',
@@ -78,10 +73,6 @@ export const profile = {
     },
     {
       name: 'VCI Web Application',
-      badge: {
-        en: 'Erasmus+ Research',
-        tr: 'Erasmus+ Araştırma',
-      },
       description: {
         en: 'Web application interface modernized for the Visual Computing Incubator (VCI) research project at the University of Bonn. Focused on refactoring component architecture, optimizing UI responsiveness, and maintaining code quality using React and Git in an international research lab.',
         tr: 'Bonn Üniversitesi Visual Computing Incubator (VCI) araştırma altyapısı için modernize edilen web uygulaması. Uluslararası bir araştırma laboratuvarı ortamında React ve Git kullanılarak bileşen mimarisinin yenilenmesi, arayüz optimizasyonu ve kod bakımı gerçekleştirildi.',
@@ -92,10 +83,6 @@ export const profile = {
     },
     {
       name: 'Deep Dive',
-      badge: {
-        en: 'Term Project',
-        tr: 'Dönem Projesi',
-      },
       description: {
         en: 'Term Project — A 2D mobile arcade game developed using Java and the LibGDX framework. Implements custom game physics, dynamic collision detection, sprite animations, sound effects, and responsive touch controls optimized for Android devices.',
         tr: 'Dönem Projesi — Java ve LibGDX oyun motoru kullanılarak geliştirilmiş 2D mobil arcade oyunu. Dinamik fizik hesaplamaları, çarpışma algılama (collision detection), sprite animasyonları, ses efektleri ve mobil cihazlar için optimize edilmiş dokunmatik kontroller içerir.',
@@ -106,10 +93,6 @@ export const profile = {
     },
     {
       name: 'Call Center Management System',
-      badge: {
-        en: 'Team Project · Internship',
-        tr: 'Ekip Projesi · Staj',
-      },
       description: {
         en: 'A collaborative team project developed during the mandatory internship at BTK. Contributed primarily to the Java backend and database architecture, integrating with a React frontend and PostgreSQL to manage customer records, call logs, and representative workflows.',
         tr: 'BTK zorunlu stajı kapsamında ekip çalışmasıyla geliştirilen çağrı merkezi yönetim sistemi. Müşteri kayıtları, çağrı geçmişi ve temsilci iş akışlarını yönetmek için ağırlıklı olarak Java backend ve PostgreSQL veritabanı mimarisinde yer alıp React arayüz entegrasyonu sağlandı.',
@@ -120,10 +103,6 @@ export const profile = {
     },
     {
       name: 'Neural Network Apple Quality',
-      badge: {
-        en: 'Machine Learning',
-        tr: 'Makine Öğrenmesi',
-      },
       description: {
         en: 'Deep Learning project implementing Artificial Neural Networks (ANN) to classify fruit quality metrics (sweetness, firmness, size, etc.). Features data preprocessing, model training, evaluation metrics, and prediction pipelines.',
         tr: 'Yapay Sinir Ağları (YSA/ANN) mimarisi kullanılarak meyve kalite metriklerini (tatlılık, sertlik, boyut vb.) analiz edip sınıflandıran derin öğrenme projesi. Veri önişleme, model eğitimi ve doğruluk analizi aşamalarını içerir.',

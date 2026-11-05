@@ -1,4 +1,4 @@
-import { FiArrowUpRight, FiGithub, FiStar, FiLock, FiAward } from 'react-icons/fi'
+import { FiArrowUpRight, FiGithub, FiStar, FiLock } from 'react-icons/fi'
 import Reveal from '../components/Reveal'
 import SectionHeading from '../components/SectionHeading'
 import { profile } from '../data/profile'
@@ -23,12 +23,6 @@ export default function Projects() {
                   <h3 className="text-2xl font-semibold text-white group-hover:text-neutral-200 transition-colors">
                     {project.name}
                   </h3>
-                  {project.badge && (
-                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 text-blue-300 text-xs border border-blue-500/20 font-medium">
-                      <FiAward className="h-3.5 w-3.5 text-blue-400" />
-                      {project.badge[lang]}
-                    </span>
-                  )}
                   {project.featured && (
                     <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 text-neutral-300 text-xs border border-white/10 font-medium">
                       <FiStar className="h-3.5 w-3.5 text-amber-400" />
