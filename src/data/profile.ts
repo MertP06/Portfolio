@@ -70,7 +70,7 @@ export const profile = {
         tr: 'Bonn Üniversitesi Visual Computing Incubator (VCI) araştırma altyapısı için modernize edilen web uygulaması. Uluslararası bir araştırma laboratuvarı ortamında React ve Git kullanılarak bileşen mimarisinin yenilenmesi, arayüz optimizasyonu ve kod bakımı gerçekleştirildi.',
       },
       tech: ['React', 'JavaScript', 'Git', 'CSS3', 'Responsive Design'],
-      url: 'https://github.com/MertP06/vci-webapp',
+      url: 'https://github.com/MertP06/VCI-Webapp',
       featured: true,
     },
     {
