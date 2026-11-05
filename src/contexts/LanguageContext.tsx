@@ -34,8 +34,8 @@ export const translations: Translations = {
     tr: "Konya Teknik Üniversitesi Bilgisayar Mühendisliği mezunuyum. Temiz, fonksiyonel ve ölçeklenebilir yazılım çözümleri geliştirmeye odaklanıyorum.",
   },
   'about.p2': {
-    en: "Throughout my education, I completed two valuable internships: at BTK (Information and Communication Technologies Authority), where I developed desktop applications using Java and MySQL, and at the University of Bonn (Visual Computing Incubator), where I spent 2 months as an Erasmus intern updating and maintaining their web application using React and Git.",
-    tr: "Öğrenim hayatım boyunca iki değerli staj deneyimi edindim: BTK bünyesinde Java ve MySQL ile masaüstü yazılım geliştirme üzerine çalıştım; ardından Bonn Üniversitesi'nde (Visual Computing Incubator) 2 aylık Erasmus stajımla projenin web uygulamasını React ve Git kullanarak güncelledim.",
+    en: "Throughout my education, I completed two valuable internships: at BTK (Information and Communication Technologies Authority), where I developed desktop software using Java, Swing, and PostgreSQL with Git, and at the University of Bonn (Visual Computing Incubator), where I spent 2 months as an Erasmus intern updating and maintaining their web application using React and Git.",
+    tr: "Öğrenim hayatım boyunca iki değerli staj deneyimi edindim: BTK bünyesinde Java, Swing, PostgreSQL ve Git ile masaüstü yazılım geliştirme üzerine çalıştım; ardından Bonn Üniversitesi'nde (Visual Computing Incubator) 2 aylık Erasmus stajımla projenin web uygulamasını React ve Git kullanarak güncelledim.",
   },
   'about.p3': {
     en: "I work with Java, React, TypeScript, and modern database systems. I am enthusiastic about writing reliable code and exploring new technologies.",

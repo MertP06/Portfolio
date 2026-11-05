@@ -22,7 +22,7 @@
   - **Role:** Web Developer Intern
   - **Scope:** Updated, refactored, and maintained the VCI project web application using **React** and **Git**.
 - 🇹🇷 **Mandatory Internship:** **Information and Communication Technologies Authority (BTK)**
-  - Developed a Call Center Management desktop application with **Java Swing** and **MySQL**.
+  - Developed a Call Center Management desktop application with **Java Swing**, **PostgreSQL**, and **Git**.
 - 🌐 **Multilingual Support:** Fully bilingual portfolio supporting both **English (EN)** and **Turkish (TR)**.
 
 ---
