@@ -16,8 +16,8 @@ export const translations: Translations = {
   // Home Page
   'home.role': { en: 'Computer Engineer', tr: 'Bilgisayar Mühendisi' },
   'home.intro': {
-    en: "Hello, I'm Mert. Computer Engineer focusing on Full-Stack Development & modern web technologies. Experienced in building web and desktop applications through internships at BTK and the University of Bonn.",
-    tr: "Merhaba, ben Mert. Full-Stack Geliştirme ve modern web teknolojilerine odaklanan bir Bilgisayar Mühendisiyim. BTK ve Bonn Üniversitesi stajlarım aracılığıyla web ve masaüstü yazılımları geliştirme deneyimine sahibim.",
+    en: "Hello, I'm Mert. Computer Engineer focusing on Full-Stack Development & modern web technologies. Experienced in collaborative backend development with Java and PostgreSQL at BTK, and dedicated Frontend development with React during my Erasmus internship at the University of Bonn.",
+    tr: "Merhaba, ben Mert. Full-Stack Geliştirme ve modern web teknolojilerine odaklanan bir Bilgisayar Mühendisiyim. BTK stajımda bir ekip bünyesinde Java ve PostgreSQL ile backend süreçlerinde, Bonn Üniversitesi Erasmus stajımda ise React ile frontend geliştirme süreçlerinde yer aldım.",
   },
   'home.aboutBtn': { en: 'About Me', tr: 'Hakkımda' },
   'home.contactBtn': { en: 'Contact', tr: 'İletişim' },
@@ -34,8 +34,8 @@ export const translations: Translations = {
     tr: "Konya Teknik Üniversitesi Bilgisayar Mühendisliği mezunuyum. Temiz, fonksiyonel ve ölçeklenebilir yazılım çözümleri geliştirmeye odaklanıyorum.",
   },
   'about.p2': {
-    en: "Throughout my education, I completed two valuable internships: at BTK (Information and Communication Technologies Authority), where I developed desktop software using Java, Swing, and PostgreSQL with Git, and at the University of Bonn (Visual Computing Incubator), where I spent 2 months as an Erasmus intern updating and maintaining their web application using React and Git.",
-    tr: "Öğrenim hayatım boyunca iki değerli staj deneyimi edindim: BTK bünyesinde Java, Swing, PostgreSQL ve Git ile masaüstü yazılım geliştirme üzerine çalıştım; ardından Bonn Üniversitesi'nde (Visual Computing Incubator) 2 aylık Erasmus stajımla projenin web uygulamasını React ve Git kullanarak güncelledim.",
+    en: "Throughout my education, I completed two distinct internships: at BTK (Information and Communication Technologies Authority), I worked within a development team contributing to the Java backend and PostgreSQL database of a Call Center system integrated with React; while at the University of Bonn (Visual Computing Incubator), I spent 2 months as an Erasmus intern focusing specifically on Frontend web development using React and Git.",
+    tr: "Öğrenim hayatım boyunca iki değerli staj deneyimi edindim: BTK bünyesinde yazılımcı bir ekip projesinde yer alarak React arayüzüyle entegre çalışan Çağrı Merkezi sisteminin Java backend ve PostgreSQL veritabanı süreçlerinde görev aldım; Bonn Üniversitesi'nde (Visual Computing Incubator) ise 2 aylık Erasmus stajımda sadece Frontend web geliştirmeye odaklanarak projenin web uygulamasını React ve Git ile güncelledim.",
   },
   'about.p3': {
     en: "I work with Java, React, TypeScript, and modern database systems. I am enthusiastic about writing reliable code and exploring new technologies.",

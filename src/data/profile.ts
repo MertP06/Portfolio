@@ -108,14 +108,14 @@ export const profile = {
     {
       name: 'Call Center Management System',
       badge: {
-        en: 'Internship Project',
-        tr: 'Staj Projesi',
+        en: 'Team Project · Internship',
+        tr: 'Ekip Projesi · Staj',
       },
       description: {
-        en: 'Desktop management system built during the mandatory internship at BTK. Features customer records management, call logging, representative workflow tracking, and relational data persistence using Java Swing and PostgreSQL.',
-        tr: 'BTK zorunlu mühendislik stajında geliştirilen masaüstü yönetim sistemi. Müşteri kayıtları, çağrı geçmişi, temsilci operasyonları ve PostgreSQL veritabanı CRUD işlemlerini Java Swing arayüzü ile yönetir.',
+        en: 'A collaborative team project developed during the mandatory internship at BTK. Contributed primarily to the Java backend and database architecture, integrating with a React frontend and PostgreSQL to manage customer records, call logs, and representative workflows.',
+        tr: 'BTK zorunlu stajı kapsamında ekip çalışmasıyla geliştirilen çağrı merkezi yönetim sistemi. Müşteri kayıtları, çağrı geçmişi ve temsilci iş akışlarını yönetmek için ağırlıklı olarak Java backend ve PostgreSQL veritabanı mimarisinde yer alıp React arayüz entegrasyonu sağlandı.',
       },
-      tech: ['Java', 'Swing', 'PostgreSQL', 'Git', 'JDBC'],
+      tech: ['Java', 'React', 'PostgreSQL', 'Git', 'RESTful API'],
       url: 'https://github.com/MertP06/Call-Center-Management-System',
       featured: true,
     },
@@ -138,8 +138,8 @@ export const profile = {
   experience: [
     {
       role: {
-        en: 'Intern Student (Erasmus+)',
-        tr: 'Stajyer Öğrenci (Erasmus+)',
+        en: 'Frontend Developer Intern (Erasmus+)',
+        tr: 'Frontend Geliştirici Stajyer (Erasmus+)',
       },
       company: {
         en: 'Rheinische Friedrich-Wilhelms-Universität Bonn · Visual Computing Incubator (VCI)',
@@ -155,24 +155,24 @@ export const profile = {
       },
       details: {
         en: [
-          'Completed a 60-day Erasmus+ internship within the Visual Computing Incubator (VCI) project.',
-          'Updated and maintained the project web application using React.',
-          'Used Git for version control, collaborative development, and workflow management.',
-          'Gained international hands-on experience in an academic research environment.',
+          'Completed a 60-day Erasmus+ internship focused purely on Frontend Web Development.',
+          'Updated, modernized, and maintained the VCI project web application interface using React.',
+          'Worked on responsive design, modern UI components, and state management.',
+          'Used Git for version control and collaborative code reviews in an international research lab.',
         ],
         tr: [
-          'Visual Computing Incubator (VCI) projesinde 60 günlük Erasmus+ stajımı tamamladım.',
-          'React kullanarak projenin web uygulamasını güncelledim ve geliştirdim.',
-          'Versiyon kontrolü, iş akışı ve ekip içi koordinasyon için Git kullandım.',
-          'Akademik bir araştırma ortamında uluslararası çalışma tecrübesi edindim.',
+          'Sadece Frontend Web Geliştirme odaklı 60 günlük Erasmus+ stajımı tamamladım.',
+          'React kullanarak VCI araştırma projesinin web uygulaması arayüzünü güncelledim ve modernize ettim.',
+          'Duyarlı tasarım (responsive), modern UI bileşenleri ve arayüz bakımı üzerine çalıştım.',
+          'Uluslararası bir araştırma laboratuvarı ortamında Git ile versiyon yönetimi ve kod takibi sağladım.',
         ],
       },
-      tags: ['React', 'Git', 'Web Development', 'Erasmus+'],
+      tags: ['React', 'JavaScript', 'Frontend', 'Git', 'Erasmus+'],
     },
     {
       role: {
-        en: 'Intern (Software Engineering)',
-        tr: 'Stajyer (Yazılım Mühendisliği)',
+        en: 'Software Engineering Intern (Backend / Team Project)',
+        tr: 'Yazılım Mühendisliği Stajyeri (Backend / Ekip Projesi)',
       },
       company: {
         en: 'Bilgi Teknolojileri ve İletişim Kurumu (BTK)',
@@ -188,19 +188,21 @@ export const profile = {
       },
       details: {
         en: [
-          'Completed 20-day mandatory engineering internship.',
-          'Developed a desktop Call Center Management System using Java and Swing.',
-          'Integrated relational database operations and CRUD architecture with PostgreSQL.',
-          'Used Git for version control and project tracking.',
+          'Completed a 20-day mandatory internship working in a collaborative developer team.',
+          'Contributed to the backend services of the Call Center Management System using Java.',
+          'Designed and implemented relational database CRUD operations with PostgreSQL.',
+          'Collaborated with team members to integrate backend APIs with the React web frontend.',
+          'Managed project workflow, branching, and team collaboration using Git.',
         ],
         tr: [
-          '20 günlük zorunlu mühendislik stajı tamamlandı.',
-          'Java ve Swing ile masaüstü Çağrı Merkezi Yönetim Sistemi geliştirildi.',
-          'PostgreSQL ile ilişkisel veritabanı CRUD işlemleri ve veri yönetimi sağlandı.',
-          'Versiyon yönetimi ve proje takibi için Git kullanıldı.',
+          '20 günlük zorunlu stajımı yazılımcı bir ekip bünyesinde grup projesi olarak tamamladım.',
+          'Çağrı Merkezi Yönetim Sistemi projesinin Java ile backend servislerinin geliştirilmesinde yer aldım.',
+          'PostgreSQL ile ilişkisel veritabanı CRUD operasyonlarını ve veri yönetimini gerçekleştirdim.',
+          'Backend servislerinin React arayüzü ile entegre çalışması sürecinde ekip içi koordinasyon sağladım.',
+          'İş akışı, dal yönetimi (branching) ve versiyon kontrolü için Git kullandım.',
         ],
       },
-      tags: ['Java', 'Swing', 'PostgreSQL', 'Git'],
+      tags: ['Java', 'React', 'PostgreSQL', 'Git', 'Backend', 'Teamwork'],
     },
   ] as ExperienceItem[],
 

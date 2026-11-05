@@ -19,10 +19,11 @@
 - 🎓 **Education:** BSc in Computer Engineering from **Konya Technical University (KTÜN)** (2022–2026).
 - 🇩🇪 **Erasmus+ Internship:** **Rheinische Friedrich-Wilhelms-Universität Bonn** — Visual Computing Incubator (VCI)
   - **Duration:** 60 days (July 1, 2026 – September 1, 2026)
-  - **Role:** Web Developer Intern
+  - **Focus:** Dedicated **Frontend Web Development**
   - **Scope:** Updated, refactored, and maintained the VCI project web application using **React** and **Git**.
 - 🇹🇷 **Mandatory Internship:** **Information and Communication Technologies Authority (BTK)**
-  - Developed a Call Center Management desktop application with **Java Swing**, **PostgreSQL**, and **Git**.
+  - **Focus:** **Backend Development & Teamwork** (Group Project)
+  - **Scope:** Developed backend services and PostgreSQL database architecture for the Call Center Management System using **Java**, integrated with a **React** web frontend and managed with **Git**.
 - 🌐 **Multilingual Support:** Fully bilingual portfolio supporting both **English (EN)** and **Turkish (TR)**.
 
 ---
