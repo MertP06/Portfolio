@@ -5,6 +5,7 @@ export interface ProjectItem {
   url?: string
   featured: boolean
   isPrivate?: boolean
+  badge?: { en: string; tr: string }
 }
 
 export interface ExperienceItem {
@@ -73,11 +74,15 @@ export const profile = {
     },
     {
       name: 'Hospital ER Management System',
-      description: {
-        en: 'Hospital emergency room triage management system with patient prioritization and live status tracking.',
-        tr: 'Hastane acil servis triyaj ve hasta önceliklendirme yönetim sistemi.',
+      badge: {
+        en: 'Graduation Project',
+        tr: 'Bitirme Projesi',
       },
-      tech: ['Java', 'Spring Boot', 'React', 'PostgreSQL'],
+      description: {
+        en: 'BSc Graduation Project (Capstone) — Hospital emergency room triage management system with real-time patient prioritization and status tracking.',
+        tr: 'Lisans Bitirme Projesi — Hastane acil servis triyaj, gerçek zamanlı hasta önceliklendirme ve süreç takip sistemi.',
+      },
+      tech: ['Java', 'Spring Boot', 'React', 'PostgreSQL', 'RESTful API'],
       url: 'https://github.com/MertP06/Hospital-ER-Management-System',
       featured: true,
     },
