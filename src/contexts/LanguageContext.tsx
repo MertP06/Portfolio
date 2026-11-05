@@ -16,8 +16,8 @@ export const translations: Translations = {
   // Home Page
   'home.role': { en: 'Computer Engineer', tr: 'Bilgisayar Mühendisi' },
   'home.intro': {
-    en: "Hello, I'm Mert. Computer Engineer focusing on Full-Stack Development & modern web technologies. Experienced in collaborative backend development with Java and PostgreSQL at BTK, and dedicated Frontend development with React during my Erasmus internship at the University of Bonn.",
-    tr: "Merhaba, ben Mert. Full-Stack Geliştirme ve modern web teknolojilerine odaklanan bir Bilgisayar Mühendisiyim. BTK stajımda bir ekip bünyesinde Java ve PostgreSQL ile backend süreçlerinde, Bonn Üniversitesi Erasmus stajımda ise React ile frontend geliştirme süreçlerinde yer aldım.",
+    en: "Hello, I'm Mert. Computer Engineer focusing on Full-Stack Development & modern web technologies, with internship experience at BTK and the University of Bonn.",
+    tr: "Merhaba, ben Mert. Full-Stack geliştirme ve modern web teknolojilerine odaklanan bir Bilgisayar Mühendisiyim. BTK ve Bonn Üniversitesi staj deneyimlerine sahibim.",
   },
   'home.aboutBtn': { en: 'About Me', tr: 'Hakkımda' },
   'home.contactBtn': { en: 'Contact', tr: 'İletişim' },
