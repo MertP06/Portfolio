@@ -3,18 +3,28 @@ import Reveal from '../components/Reveal'
 import SectionHeading from '../components/SectionHeading'
 import ContactForm from '../components/ContactForm'
 import { profile } from '../data/profile'
+import { useLanguage } from '../contexts/LanguageContext'
 
 export default function Contact() {
+  const { lang, t } = useLanguage()
+
   return (
     <section className="mx-auto max-w-5xl px-6 py-16">
-      <SectionHeading title="Contact" description="Feel free to reach out to me" />
+      <SectionHeading
+        title={t('contact.title')}
+        description={t('contact.description')}
+      />
 
       <div className="mt-12 grid gap-12 lg:grid-cols-5 items-stretch">
         {/* Form - wider */}
         <Reveal className="lg:col-span-3">
-          <div className="p-8 rounded-2xl border border-white/10 bg-white/[0.02] h-full flex flex-col">
-            <h3 className="text-xl font-semibold text-white mb-2">Send a Message</h3>
-            <p className="text-neutral-500 mb-8">Fill out the form, I'll get back to you as soon as possible.</p>
+          <div className="p-8 rounded-2xl border border-white/10 bg-white/[0.02] h-full flex flex-col shadow-sm">
+            <h3 className="text-xl font-semibold text-white mb-2">
+              {t('contact.sendMessage')}
+            </h3>
+            <p className="text-neutral-400 text-sm mb-8">
+              {t('contact.formDesc')}
+            </p>
             <div className="flex-1 flex flex-col">
               <ContactForm />
             </div>
@@ -31,8 +41,12 @@ export default function Contact() {
             <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center mb-4">
               <FiMail className="h-5 w-5 text-neutral-300" />
             </div>
-            <p className="text-sm text-neutral-500 mb-1">Email</p>
-            <p className="text-white group-hover:text-neutral-200 transition-colors">{profile.contact.email}</p>
+            <p className="text-xs text-neutral-500 uppercase tracking-wider mb-1 font-medium">
+              {t('contact.emailLabel')}
+            </p>
+            <p className="text-white group-hover:text-neutral-200 transition-colors font-mono text-sm break-all">
+              {profile.contact.email}
+            </p>
           </a>
 
           {/* Location */}
@@ -40,40 +54,34 @@ export default function Contact() {
             <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center mb-4">
               <FiMapPin className="h-5 w-5 text-neutral-300" />
             </div>
-            <p className="text-sm text-neutral-500 mb-1">Location</p>
-            <p className="text-white">{profile.location}</p>
+            <p className="text-xs text-neutral-500 uppercase tracking-wider mb-1 font-medium">
+              {t('contact.locationTitle')}
+            </p>
+            <p className="text-white text-sm">{profile.location[lang]}</p>
           </div>
 
           {/* Social */}
           <div className="p-6 rounded-2xl border border-white/10 bg-white/[0.02]">
-            <p className="text-sm text-neutral-500 mb-4">Social Media</p>
+            <p className="text-xs text-neutral-500 uppercase tracking-wider mb-4 font-medium">
+              {t('contact.socialTitle')}
+            </p>
             <div className="flex gap-3">
               {[
-                { icon: FiGithub, href: profile.contact.github },
-                { icon: FiLinkedin, href: profile.contact.linkedin },
-                { icon: FiInstagram, href: profile.contact.instagram },
+                { icon: FiGithub, href: profile.contact.github, label: 'GitHub' },
+                { icon: FiLinkedin, href: profile.contact.linkedin, label: 'LinkedIn' },
+                { icon: FiInstagram, href: profile.contact.instagram, label: 'Instagram' },
               ].map((s, i) => (
                 <a
                   key={i}
                   href={s.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-12 h-12 rounded-xl border border-white/10 flex items-center justify-center text-neutral-400 hover:border-white/20 hover:text-white transition-all"
+                  aria-label={s.label}
+                  className="w-12 h-12 rounded-xl border border-white/10 flex items-center justify-center text-neutral-400 hover:border-white/20 hover:text-white transition-all bg-white/[0.02]"
                 >
                   <s.icon className="h-5 w-5" />
                 </a>
               ))}
-            </div>
-          </div>
-
-          {/* Status */}
-          <div className="p-6 rounded-2xl border border-emerald-500/10 bg-emerald-500/5">
-            <div className="flex items-center gap-3">
-              <span className="h-3 w-3 rounded-full bg-emerald-500/70" />
-              <div>
-                <p className="text-emerald-400/80 font-medium">Available</p>
-                <p className="text-sm text-neutral-500">Open to internship and project opportunities</p>
-              </div>
             </div>
           </div>
         </Reveal>

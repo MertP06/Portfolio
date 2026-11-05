@@ -1,10 +1,12 @@
 import { useState, type FormEvent } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FiSend, FiCheck, FiAlertCircle } from 'react-icons/fi'
+import { useLanguage } from '../contexts/LanguageContext'
 
 type FormState = 'idle' | 'submitting' | 'success' | 'error'
 
 export default function ContactForm() {
+  const { t } = useLanguage()
   const [formState, setFormState] = useState<FormState>('idle')
   const [formData, setFormData] = useState({
     name: '',
@@ -16,10 +18,8 @@ export default function ContactForm() {
     e.preventDefault()
     setFormState('submitting')
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    await new Promise((resolve) => setTimeout(resolve, 1000))
 
-    // For now, open mailto with the form data
     const subject = encodeURIComponent(`Portfolio Contact - ${formData.name}`)
     const body = encodeURIComponent(
       `From: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
@@ -34,14 +34,14 @@ export default function ContactForm() {
   }
 
   const inputClasses =
-    'w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-neutral-100 placeholder-neutral-500 outline-none transition-all duration-200 focus:border-white/30 focus:bg-white/[0.08] focus:ring-2 focus:ring-white/5'
+    'w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-neutral-100 placeholder-neutral-500 outline-none transition-all duration-200 focus:border-white/30 focus:bg-white/[0.08] focus:ring-2 focus:ring-white/5 text-sm'
 
   return (
     <form onSubmit={handleSubmit} className="flex-1 flex flex-col">
       <div className="grid gap-5 sm:grid-cols-2 mb-5">
         <div>
-          <label htmlFor="name" className="mb-2 block text-sm text-neutral-400">
-            Name
+          <label htmlFor="name" className="mb-2 block text-xs font-medium text-neutral-400">
+            {t('contact.nameLabel')}
           </label>
           <input
             type="text"
@@ -50,14 +50,14 @@ export default function ContactForm() {
             required
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            placeholder="Your Full Name"
+            placeholder={t('contact.namePlaceholder')}
             className={inputClasses}
             disabled={formState === 'submitting'}
           />
         </div>
         <div>
-          <label htmlFor="email" className="mb-2 block text-sm text-neutral-400">
-            Email
+          <label htmlFor="email" className="mb-2 block text-xs font-medium text-neutral-400">
+            {t('contact.emailLabel')}
           </label>
           <input
             type="email"
@@ -66,15 +66,15 @@ export default function ContactForm() {
             required
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            placeholder="example@email.com"
+            placeholder={t('contact.emailPlaceholder')}
             className={inputClasses}
             disabled={formState === 'submitting'}
           />
         </div>
       </div>
       <div className="flex-1 flex flex-col mb-5">
-        <label htmlFor="message" className="mb-2 block text-sm text-neutral-400">
-          Message
+        <label htmlFor="message" className="mb-2 block text-xs font-medium text-neutral-400">
+          {t('contact.msgLabel')}
         </label>
         <textarea
           id="message"
@@ -82,22 +82,23 @@ export default function ContactForm() {
           required
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          placeholder="Write your message here..."
-          className={`${inputClasses} resize-none flex-1 min-h-[150px]`}
+          placeholder={t('contact.msgPlaceholder')}
+          className={`${inputClasses} resize-none flex-1 min-h-[140px]`}
           disabled={formState === 'submitting'}
         />
       </div>
       <motion.button
         type="submit"
         disabled={formState === 'submitting' || formState === 'success'}
-        whileHover={{ scale: formState === 'idle' ? 1.02 : 1 }}
-        whileTap={{ scale: formState === 'idle' ? 0.98 : 1 }}
-        className={`relative flex w-full items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-semibold transition-all duration-300 ${formState === 'success'
-          ? 'bg-green-500/20 text-green-400 border border-green-500/30'
-          : formState === 'error'
-            ? 'bg-red-500/20 text-red-400 border border-red-500/30'
-            : 'bg-neutral-100 text-neutral-950 hover:bg-neutral-200 hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]'
-          }`}
+        whileHover={{ scale: formState === 'idle' ? 1.01 : 1 }}
+        whileTap={{ scale: formState === 'idle' ? 0.99 : 1 }}
+        className={`relative flex w-full items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-semibold transition-all duration-300 ${
+          formState === 'success'
+            ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'
+            : formState === 'error'
+            ? 'bg-rose-500/20 text-rose-300 border border-rose-500/30'
+            : 'bg-white text-neutral-950 hover:bg-neutral-200 shadow-md'
+        }`}
       >
         <AnimatePresence mode="wait">
           {formState === 'idle' && (
@@ -108,8 +109,8 @@ export default function ContactForm() {
               exit={{ opacity: 0, y: -10 }}
               className="flex items-center gap-2"
             >
-              Send
-              <FiSend size={16} />
+              {t('contact.sendBtn')}
+              <FiSend size={15} />
             </motion.span>
           )}
           {formState === 'submitting' && (
@@ -125,7 +126,7 @@ export default function ContactForm() {
                 transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
                 className="inline-block h-4 w-4 border-2 border-neutral-950 border-t-transparent rounded-full"
               />
-              Sending...
+              {t('contact.sending')}
             </motion.span>
           )}
           {formState === 'success' && (
@@ -137,7 +138,7 @@ export default function ContactForm() {
               className="flex items-center gap-2"
             >
               <FiCheck size={16} />
-              Sent!
+              {t('contact.sent')}
             </motion.span>
           )}
           {formState === 'error' && (
@@ -149,7 +150,7 @@ export default function ContactForm() {
               className="flex items-center gap-2"
             >
               <FiAlertCircle size={16} />
-              An error occurred
+              {t('contact.error')}
             </motion.span>
           )}
         </AnimatePresence>

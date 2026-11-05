@@ -1,121 +1,189 @@
+export interface ExperienceItem {
+  role: { en: string; tr: string }
+  company: { en: string; tr: string }
+  period: { en: string; tr: string }
+  location: { en: string; tr: string }
+  details: { en: string[]; tr: string[] }
+  tags?: string[]
+}
+
+export interface EducationItem {
+  school: { en: string; tr: string }
+  degree: { en: string; tr: string }
+  period: string
+  description?: { en: string; tr: string }
+}
+
 export const profile = {
   name: 'Mert Polat',
-  title: 'Computer Engineering Student',
-  titles: [
-    'Computer Engineering Student',
-  ],
-  location: 'Ankara, Turkey',
+  titles: {
+    en: ['Computer Engineer', 'Web Developer', 'Software Developer'],
+    tr: ['Bilgisayar Mühendisi', 'Web Geliştirici', 'Yazılım Geliştirici'],
+  },
+  location: {
+    en: 'Ankara, Turkey',
+    tr: 'Ankara, Türkiye',
+  },
   photo: import.meta.env.BASE_URL + 'profile.jpeg',
   photoAlt: 'Mert Polat',
-  summary:
-    'Final year Computer Engineering student at KTÜN. I have school projects and internship experience.',
-  about: [
-    'I am a final year Computer Engineering student at Konya Technical University.',
-    'I work on Java and web technologies.',
-  ],
-  highlights: [
-    'Java',
-    'Web Development',
-    'Open to Learning',
-  ],
-  metrics: [
-    { label: 'Education', value: '2022-2026', sub: 'KTÜN' },
-    { label: 'Internship', value: '2025', sub: 'BTK' },
-    { label: 'Projects', value: '4+', sub: 'GitHub' },
-  ],
+
   contact: {
     email: 'mert06polat@gmail.com',
     github: 'https://github.com/MertP06',
     linkedin: 'https://www.linkedin.com/in/mert-polat-b05195302/',
     instagram: 'https://www.instagram.com/merwtpolat/',
   },
+
   skills: {
-    languages: [
-      { name: 'Java', level: 60 },
-      { name: 'JavaScript', level: 45 },
-      { name: 'Python', level: 40 },
-      { name: 'C', level: 35 },
-    ],
-    web: [
-      { name: 'HTML/CSS', level: 55 },
-      { name: 'React', level: 40 },
-      { name: 'Spring Boot', level: 35 },
-    ],
-    database: [
-      { name: 'SQL', level: 50 },
-      { name: 'PostgreSQL', level: 40 },
-    ],
-    tools: [
-      { name: 'Git', level: 50 },
-      { name: 'VS Code', level: 60 },
-      { name: 'IntelliJ IDEA', level: 50 },
-    ],
+    languages: ['Java', 'JavaScript', 'TypeScript', 'Python', 'C'],
+    web: ['React', 'HTML5', 'CSS3', 'Tailwind CSS', 'Spring Boot', 'RESTful APIs', 'Vite'],
+    database: ['PostgreSQL', 'MySQL', 'SQL'],
+    tools: ['Git', 'GitHub', 'VS Code', 'IntelliJ IDEA', 'Postman'],
   },
+
   projects: [
     {
       name: 'Hospital ER Management System',
-      description: 'School project - Hospital emergency room triage management system.',
+      description: {
+        en: 'Hospital emergency room triage management system with patient prioritization and live status tracking.',
+        tr: 'Hastane acil servis triyaj ve hasta önceliklendirme yönetim sistemi.',
+      },
       tech: ['Java', 'Spring Boot', 'React', 'PostgreSQL'],
       url: 'https://github.com/MertP06/Hospital-ER-Management-System',
       featured: true,
     },
     {
       name: 'Call Center Management System',
-      description: 'BTK internship project - Call center application.',
+      description: {
+        en: 'Call center management desktop application developed during mandatory internship at BTK.',
+        tr: 'BTK zorunlu stajı kapsamında geliştirilen çağrı merkezi yönetim masaüstü uygulaması.',
+      },
       tech: ['Java', 'Swing', 'MySQL'],
       url: 'https://github.com/MertP06/Call-Center-Management-System',
       featured: true,
     },
     {
       name: 'Deep Dive',
-      description: 'School project - 2D mobile game.',
+      description: {
+        en: '2D mobile game project developed using Java and LibGDX framework.',
+        tr: 'Java ve LibGDX oyun motoru kullanılarak geliştirilmiş 2D mobil oyun projesi.',
+      },
       tech: ['Java', 'LibGDX'],
       url: 'https://github.com/MertP06/Deep-Dive',
       featured: false,
     },
     {
       name: 'Neural Network Apple Quality',
-      description: 'School project - Classification using artificial neural networks.',
+      description: {
+        en: 'Quality classification and prediction system utilizing Artificial Neural Networks.',
+        tr: 'Yapay sinir ağları kullanılarak elma kalite sınıflandırması ve tahmin sistemi.',
+      },
       tech: ['Python', 'TensorFlow'],
       url: 'https://github.com/MertP06/Neural-Network-Apple-Quality',
       featured: false,
     },
   ],
+
   experience: [
     {
-      role: 'Intern',
-      company: 'Bilgi Teknolojileri ve İletişim Kurumu (BTK)',
-      period: 'Jun 2025 - Jul 2025',
-      location: 'Ankara',
-      details: [
-        '20-day mandatory internship',
-        'Desktop application development with Java/Swing',
-      ],
+      role: {
+        en: 'Erasmus Intern (Web Developer)',
+        tr: 'Erasmus Stajyeri (Web Geliştirici)',
+      },
+      company: {
+        en: 'Rheinische Friedrich-Wilhelms-Universität Bonn · Visual Computing Incubator (VCI)',
+        tr: 'Bonn Üniversitesi (Uni Bonn) · Visual Computing Incubator (VCI)',
+      },
+      period: {
+        en: '1 Jul 2026 – 1 Sep 2026 (60 Days)',
+        tr: '1 Tem 2026 – 1 Eyl 2026 (60 Gün)',
+      },
+      location: {
+        en: 'Bonn, Germany',
+        tr: 'Bonn, Almanya',
+      },
+      details: {
+        en: [
+          'Completed a 60-day Erasmus+ internship within the Visual Computing Incubator (VCI) project.',
+          'Updated, maintained, and refactored the web application interface using React.',
+          'Collaborated with the research team using Git for version control, issue tracking, and code reviews.',
+          'Worked in an international academic setting focused on high-precision 3D/4D imaging and VR/XR.',
+        ],
+        tr: [
+          'Visual Computing Incubator (VCI) araştırma projesinde 60 günlük Erasmus+ stajımı tamamladım.',
+          'React teknolojisi ile projenin web uygulaması arayüzünü güncelledim, modernize ettim ve bakımını yaptım.',
+          'Versiyon yönetimi, kod incelemeleri ve ekip içi koordinasyon için Git kullandım.',
+          'Yüksek hassasiyetli 3D/4D görüntüleme ve VR/XR odaklı uluslararası bir araştırma ortamında tecrübe kazandım.',
+        ],
+      },
+      tags: ['React', 'Git', 'Web Development', 'Erasmus+'],
     },
-  ],
+    {
+      role: {
+        en: 'Software Engineering Intern',
+        tr: 'Yazılım Mühendisliği Stajyeri',
+      },
+      company: {
+        en: 'Information and Communication Technologies Authority (BTK)',
+        tr: 'Bilgi Teknolojileri ve İletişim Kurumu (BTK)',
+      },
+      period: {
+        en: 'Jun 2025 – Jul 2025 (20 Days)',
+        tr: 'Haz 2025 – Tem 2025 (20 Gün)',
+      },
+      location: {
+        en: 'Ankara, Turkey',
+        tr: 'Ankara, Türkiye',
+      },
+      details: {
+        en: [
+          'Completed a 20-day mandatory engineering internship.',
+          'Designed and built a desktop Call Center Management System using Java and Swing.',
+          'Implemented relational database operations with MySQL.',
+        ],
+        tr: [
+          '20 iş günlük zorunlu mühendislik stajı tamamlandı.',
+          'Java ve Swing teknolojileriyle masaüstü Çağrı Merkezi Yönetim Sistemi geliştirildi.',
+          'MySQL ile ilişkisel veritabanı modellemesi ve CRUD operasyonları gerçekleştirildi.',
+        ],
+      },
+      tags: ['Java', 'Swing', 'MySQL'],
+    },
+  ] as ExperienceItem[],
+
   education: [
     {
-      school: 'Konya Technical University',
-      degree: 'Bachelor\'s · Computer Engineering',
-      period: '2022 - 2026',
-      description: '',
+      school: {
+        en: 'Konya Technical University (KTÜN)',
+        tr: 'Konya Teknik Üniversitesi (KTÜN)',
+      },
+      degree: {
+        en: "Bachelor of Science · Computer Engineering (Graduated)",
+        tr: 'Lisans · Bilgisayar Mühendisliği (Mezun)',
+      },
+      period: '2022 – 2026',
     },
     {
-      school: 'Süleyman Demirel Anatolian High School',
-      degree: 'High School · Science',
-      period: '2017 - 2021',
-      description: '',
+      school: {
+        en: 'Rheinische Friedrich-Wilhelms-Universität Bonn',
+        tr: 'Rheinische Friedrich-Wilhelms-Universität Bonn',
+      },
+      degree: {
+        en: 'Erasmus+ Internship · Visual Computing Incubator (VCI)',
+        tr: 'Erasmus+ Stajı · Visual Computing Incubator (VCI)',
+      },
+      period: '01.07.2026 – 01.09.2026',
     },
-  ],
-  languages: [
-    { name: 'Turkish', level: 'Native', percentage: 100 },
-    { name: 'English', level: 'B1', percentage: 50 },
-  ],
-  hobbies: [
-    'Music',
-    'Gaming',
-    'Travel',
-    'Movies & TV Shows',
-    'Technology',
-  ],
+    {
+      school: {
+        en: 'Süleyman Demirel Anatolian High School',
+        tr: 'Süleyman Demirel Anadolu Lisesi',
+      },
+      degree: {
+        en: 'High School · Science',
+        tr: 'Lise · Sayısal',
+      },
+      period: '2017 – 2021',
+    },
+  ] as EducationItem[],
 }
