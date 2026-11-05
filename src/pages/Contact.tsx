@@ -19,12 +19,9 @@ export default function Contact() {
         {/* Form - wider */}
         <Reveal className="lg:col-span-3">
           <div className="p-8 rounded-2xl border border-white/10 bg-white/[0.02] h-full flex flex-col shadow-sm">
-            <h3 className="text-xl font-semibold text-white mb-2">
+            <h3 className="text-xl font-semibold text-white mb-6">
               {t('contact.sendMessage')}
             </h3>
-            <p className="text-neutral-400 text-sm mb-8">
-              {t('contact.formDesc')}
-            </p>
             <div className="flex-1 flex flex-col">
               <ContactForm />
             </div>
