@@ -1,4 +1,4 @@
-# 💼 Mert Polat — Portfolio Website
+# Mert Polat — Portfolio Website
 
 [![React](https://img.shields.io/badge/React-19-61dafb.svg?logo=react&logoColor=black)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -10,25 +10,25 @@
 >
 > **Mert Polat'ın kişisel portföy web sitesi — Bilgisayar Mühendisliği mezunu, modern web teknolojileri ve uluslararası araştırma projesi staj deneyimi.**
 
-🌐 **Live Website / Canlı Demo:** [https://mertp06.github.io/Portfolio/](https://mertp06.github.io/Portfolio/)
+Live Website / Canlı Demo: [https://mertp06.github.io/Portfolio/](https://mertp06.github.io/Portfolio/)
 
 ---
 
-## 🌟 Highlights & Experience / Öne Çıkanlar & Deneyim
+## Highlights & Experience / Deneyim ve Özet
 
-- 🎓 **Education:** BSc in Computer Engineering from **Konya Technical University (KTÜN)** (2022–2026, GPA: 2.84).
-- 🇩🇪 **Erasmus+ Internship:** **Rheinische Friedrich-Wilhelms-Universität Bonn** — Visual Computing Incubator (VCI)
+- **Education:** BSc in Computer Engineering from **Konya Technical University (KTÜN)** (2022–2026, GPA: 2.84).
+- **Erasmus+ Internship:** **Rheinische Friedrich-Wilhelms-Universität Bonn** — Visual Computing Incubator (VCI)
   - **Duration:** 60 days (July 1, 2026 – September 1, 2026)
-  - **Focus:** Dedicated **Frontend Web Development**
+  - **Focus:** Frontend Web Development
   - **Scope:** Updated, refactored, and maintained the VCI project web application using **React** and **Git**.
-- 🇹🇷 **Mandatory Internship:** **Information and Communication Technologies Authority (BTK)**
-  - **Focus:** **Frontend Team Lead & Java Backend Integration** (Group Project)
+- **Mandatory Internship:** **Information and Communication Technologies Authority (BTK)**
+  - **Focus:** Frontend Team Lead & Java Backend Integration (Group Project)
   - **Scope:** Led the frontend team developing the Call Center Management System with **React**, while collaborating on backend services with **Java**, **PostgreSQL**, and **Git**.
-- 🌐 **Multilingual Support:** Fully bilingual portfolio supporting both **English (EN)** and **Turkish (TR)**.
+- **Multilingual Support:** Fully bilingual portfolio supporting both English (EN) and Turkish (TR).
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Frontend:** React 19, TypeScript, Vite, Tailwind CSS 4.1, Framer Motion
 - **Routing & State:** React Router DOM, Custom Context-based i18n
@@ -37,7 +37,7 @@
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Portfolio/
@@ -57,7 +57,7 @@ Portfolio/
 
 ---
 
-## 🚀 Getting Started Locally
+## Getting Started Locally
 
 ```bash
 # Clone the repository
@@ -78,10 +78,10 @@ npm run build
 
 ---
 
-## 👤 Author / İletişim
+## Author / İletişim
 
 **Mert Polat** — Computer Engineer / Bilgisayar Mühendisi
 
-- 🌐 **LinkedIn:** [Mert Polat](https://www.linkedin.com/in/mert-polat-b05195302/)
-- 💻 **GitHub:** [@MertP06](https://github.com/MertP06)
-- ✉️ **Email:** [mert06polat@gmail.com](mailto:mert06polat@gmail.com)
+- **LinkedIn:** [Mert Polat](https://www.linkedin.com/in/mert-polat-b05195302/)
+- **GitHub:** [@MertP06](https://github.com/MertP06)
+- **Email:** [mert06polat@gmail.com](mailto:mert06polat@gmail.com)
