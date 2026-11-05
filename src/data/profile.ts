@@ -46,8 +46,18 @@ export const profile = {
   skills: {
     languages: ['Java', 'JavaScript', 'TypeScript', 'Python', 'C'],
     web: ['React', 'HTML5', 'CSS3', 'Tailwind CSS', 'Spring Boot', 'RESTful APIs', 'Vite'],
-    database: ['PostgreSQL', 'MySQL', 'SQL'],
-    tools: ['Git', 'GitHub', 'VS Code', 'IntelliJ IDEA', 'Postman'],
+    database: ['PostgreSQL', 'SQL'],
+    tools: [
+      'Git',
+      'GitHub',
+      'VS Code',
+      'IntelliJ IDEA',
+      'Android Studio',
+      'Postman',
+      'DBeaver',
+      'pgAdmin 4',
+      'SSMS',
+    ],
   },
 
   projects: [
