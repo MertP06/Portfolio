@@ -26,8 +26,8 @@ export interface EducationItem {
 export const profile = {
   name: 'Mert Polat',
   titles: {
-    en: ['Computer Engineer', 'Web Developer', 'Software Developer'],
-    tr: ['Bilgisayar Mühendisi', 'Web Geliştirici', 'Yazılım Geliştirici'],
+    en: ['Computer Engineer', 'Web Developer'],
+    tr: ['Bilgisayar Mühendisi', 'Web Geliştirici'],
   },
   location: {
     en: 'Ankara, Turkey',
