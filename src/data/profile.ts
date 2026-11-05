@@ -95,10 +95,10 @@ export const profile = {
     {
       name: 'Call Center Management System',
       description: {
-        en: 'A collaborative team project developed during the mandatory internship at BTK. Contributed primarily to the Java backend and database architecture, integrating with a React frontend and PostgreSQL to manage customer records, call logs, and representative workflows.',
-        tr: 'BTK zorunlu stajı kapsamında ekip çalışmasıyla geliştirilen çağrı merkezi yönetim sistemi. Müşteri kayıtları, çağrı geçmişi ve temsilci iş akışlarını yönetmek için ağırlıklı olarak Java backend ve PostgreSQL veritabanı mimarisinde yer alıp React arayüz entegrasyonu sağlandı.',
+        en: 'A collaborative team project developed during the mandatory internship at BTK. Served as the Frontend Team Lead using React, while actively communicating with the backend team and contributing to the Java and PostgreSQL service integration.',
+        tr: 'BTK zorunlu stajı kapsamında ekip çalışmasıyla geliştirilen çağrı merkezi yönetim sistemi. Frontend ekibinin liderliğini üstlenerek React ile arayüz geliştirdim; aynı zamanda backend ekibiyle koordineli şekilde Java ve PostgreSQL servis entegrasyonunda yer aldım.',
       },
-      tech: ['Java', 'React', 'PostgreSQL', 'Git', 'RESTful API'],
+      tech: ['React', 'Java', 'PostgreSQL', 'Git', 'RESTful API'],
       url: 'https://github.com/MertP06/Call-Center-Management-System',
       featured: true,
     },
@@ -150,8 +150,8 @@ export const profile = {
     },
     {
       role: {
-        en: 'Software Engineering Intern (Backend / Team Project)',
-        tr: 'Yazılım Mühendisliği Stajyeri (Backend / Ekip Projesi)',
+        en: 'Software Engineering Intern (Frontend Team Lead)',
+        tr: 'Yazılım Mühendisliği Stajyeri (Frontend Ekip Lideri)',
       },
       company: {
         en: 'Bilgi Teknolojileri ve İletişim Kurumu (BTK)',
@@ -167,21 +167,19 @@ export const profile = {
       },
       details: {
         en: [
-          'Completed a 20-day mandatory internship working in a collaborative developer team.',
-          'Contributed to the backend services of the Call Center Management System using Java.',
-          'Designed and implemented relational database CRUD operations with PostgreSQL.',
-          'Collaborated with team members to integrate backend APIs with the React web frontend.',
-          'Managed project workflow, branching, and team collaboration using Git.',
+          'Completed a 20-day mandatory internship working in a collaborative team project.',
+          'Served as the Frontend Team Lead, coordinating the client-side architecture and developing the user interface with React.',
+          'Actively collaborated with the backend team and contributed to the Java services and PostgreSQL database integration.',
+          'Managed code reviews, branch workflows, and version control using Git.',
         ],
         tr: [
           '20 günlük zorunlu stajımı yazılımcı bir ekip bünyesinde grup projesi olarak tamamladım.',
-          'Çağrı Merkezi Yönetim Sistemi projesinin Java ile backend servislerinin geliştirilmesinde yer aldım.',
-          'PostgreSQL ile ilişkisel veritabanı CRUD operasyonlarını ve veri yönetimini gerçekleştirdim.',
-          'Backend servislerinin React arayüzü ile entegre çalışması sürecinde ekip içi koordinasyon sağladım.',
-          'İş akışı, dal yönetimi (branching) ve versiyon kontrolü için Git kullandım.',
+          'Ağırlıklı olarak Frontend ekibinin liderliğini üstlenerek React ile kullanıcı arayüzü mimarisini geliştirdim.',
+          'Backend ekibiyle sürekli iletişim halinde kalarak Java servislerinin ve PostgreSQL veritabanı entegrasyonunun geliştirilmesinde aktif rol aldım.',
+          'Kod incelemeleri, dal yönetimi (branching) ve versiyon kontrolü için Git kullandım.',
         ],
       },
-      tags: ['Java', 'React', 'PostgreSQL', 'Git', 'Backend', 'Teamwork'],
+      tags: ['React', 'Java', 'PostgreSQL', 'Git', 'Frontend Lead', 'Teamwork'],
     },
   ] as ExperienceItem[],
 

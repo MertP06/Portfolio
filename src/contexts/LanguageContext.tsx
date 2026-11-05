@@ -34,8 +34,8 @@ export const translations: Translations = {
     tr: "Konya Teknik Üniversitesi Bilgisayar Mühendisliği mezunuyum. Temiz, fonksiyonel ve ölçeklenebilir yazılım çözümleri geliştirmeye odaklanıyorum.",
   },
   'about.p2': {
-    en: "Throughout my education, I completed two distinct internships: at BTK (Information and Communication Technologies Authority), I worked within a development team contributing to the Java backend and PostgreSQL database of a Call Center system integrated with React; while at the University of Bonn (Visual Computing Incubator), I spent 2 months as an Erasmus intern focusing specifically on Frontend web development using React and Git.",
-    tr: "Öğrenim hayatım boyunca iki değerli staj deneyimi edindim: BTK bünyesinde yazılımcı bir ekip projesinde yer alarak React arayüzüyle entegre çalışan Çağrı Merkezi sisteminin Java backend ve PostgreSQL veritabanı süreçlerinde görev aldım; Bonn Üniversitesi'nde (Visual Computing Incubator) ise 2 aylık Erasmus stajımda sadece Frontend web geliştirmeye odaklanarak projenin web uygulamasını React ve Git ile güncelledim.",
+    en: "Throughout my education, I completed two distinct internships: at BTK (Information and Communication Technologies Authority), I served as Frontend Team Lead using React while also actively contributing to the Java backend and PostgreSQL integration; at the University of Bonn (Visual Computing Incubator), I spent 2 months as an Erasmus intern focusing specifically on Frontend web development using React and Git.",
+    tr: "Öğrenim hayatım boyunca iki değerli staj deneyimi edindim: BTK bünyesinde grup projesi olarak yürütülen Çağrı Merkezi sisteminde Frontend ekip lideri olarak React ile arayüz geliştirdim ve backend ekibiyle koordineli şekilde Java/PostgreSQL süreçlerine katkı sağladım; Bonn Üniversitesi'nde (Visual Computing Incubator) ise 2 aylık Erasmus stajımda sadece Frontend web geliştirmeye odaklanarak projenin web uygulamasını React ve Git ile güncelledim.",
   },
   'about.p3': {
     en: "I work with Java, React, TypeScript, and modern database systems. I am enthusiastic about writing reliable code and exploring new technologies.",

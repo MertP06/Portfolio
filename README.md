@@ -22,8 +22,8 @@
   - **Focus:** Dedicated **Frontend Web Development**
   - **Scope:** Updated, refactored, and maintained the VCI project web application using **React** and **Git**.
 - 🇹🇷 **Mandatory Internship:** **Information and Communication Technologies Authority (BTK)**
-  - **Focus:** **Backend Development & Teamwork** (Group Project)
-  - **Scope:** Developed backend services and PostgreSQL database architecture for the Call Center Management System using **Java**, integrated with a **React** web frontend and managed with **Git**.
+  - **Focus:** **Frontend Team Lead & Java Backend Integration** (Group Project)
+  - **Scope:** Led the frontend team developing the Call Center Management System with **React**, while collaborating on backend services with **Java**, **PostgreSQL**, and **Git**.
 - 🌐 **Multilingual Support:** Fully bilingual portfolio supporting both **English (EN)** and **Turkish (TR)**.
 
 ---
