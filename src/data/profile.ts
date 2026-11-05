@@ -89,7 +89,7 @@ export const profile = {
       },
       tech: ['Java', 'LibGDX', 'Game Development', 'OOP', 'Android'],
       url: 'https://github.com/MertP06/Deep-Dive',
-      featured: true,
+      featured: false,
     },
     {
       name: 'Call Center Management System',
